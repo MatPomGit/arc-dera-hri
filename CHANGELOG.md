@@ -1,5 +1,12 @@
 # Historia zmian
 
+## 2026-10-27 — Robocza wersja polska DERA-HRI v3.0-PL
+
+- Opracowano niezależny polski formularz wszystkich 45 pozycji rdzeniowych i M1–M3/F1, wraz z instrukcjami i skalą 1–7.
+- Dodano CSV do jednoznacznego mapowania identyfikatorów EN–PL, zachowano warunki SEI 12–16 i oryginalną wersję angielską.
+- Dodano stronę MkDocs i test kompletności tłumaczenia. **Adaptacja językowa nie została zwalidowana.**
+
+
 ## 2026-10-27 — Materiały do wywiadów poznawczych
 
 - Dodano przewodnik wywiadów dla dwóch rund, neutralne sondy, kodowanie problemów, rozdzielenie kwestii etyki i bezpieczeństwa robota.

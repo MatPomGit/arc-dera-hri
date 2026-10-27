@@ -29,6 +29,32 @@ class ItemBankTest(unittest.TestCase):
                 )
                 self.assertTrue(all(row["text_pl"].strip() for row in items))
 
+    def test_v3_pl_translation(self):
+        with (ROOT / "dera_hri_v3.csv").open(
+            encoding="utf-8", newline=""
+        ) as source:
+            english = list(csv.DictReader(source))
+        with (ROOT / "dera_hri_v3_pl.csv").open(
+            encoding="utf-8", newline=""
+        ) as source:
+            polish = list(csv.DictReader(source))
+
+        self.assertEqual(len(polish), 49)
+        self.assertEqual(
+            [row["item_id"] for row in polish],
+            [row["item_id"] for row in english],
+        )
+        for original, translation in zip(english, polish):
+            with self.subTest(item=original["item_id"]):
+                self.assertEqual(translation["scale"], original["scale"])
+                self.assertEqual(
+                    translation["condition"], original["condition"]
+                )
+                self.assertTrue(translation["text_pl"].strip())
+                self.assertNotEqual(
+                    translation["text_pl"], original["text_en"]
+                )
+
     def test_v3_bank(self):
         with (ROOT / "dera_hri_v3.csv").open(encoding="utf-8", newline="") as handle:
             items = list(csv.DictReader(handle))

@@ -12,6 +12,7 @@ nav:
   - Projekt: index.md
   - Model: model.md
   - Kwestionariusz: instrument.md
+  - Wariant polski: questionnaire-pl.md
   - Trafność treściowa: content-validity.md
   - Wywiady poznawcze: cognitive-interviews.md
   - Plan walidacji: validation.md

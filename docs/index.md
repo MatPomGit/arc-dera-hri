@@ -2,7 +2,7 @@
 
 **DERA-HRI** (*Dynamic Embodied Relational Affect in Human–Robot Interaction*) to rozwijany kwestionariusz doświadczeń emocjonalnych podczas bezpośredniej interakcji człowieka z robotem.
 
-**Wersja kandydująca:** v3.0 (EN), **45 pozycji głównych w pięciu postulowanych domenach**, cztery pozycje dodatkowe. **Nie przeprowadzono potwierdzonej walidacji empirycznej.** Ankieta mierzy to, co uczestnik deklaruje po interakcji, nie bezpośrednią fizjologię ani przyczynową dynamikę emocji.
+**Wersja kandydująca:** v3.0 (EN), z osobnym niezweryfikowanym tłumaczeniem v3.0-PL, **45 pozycji głównych w pięciu postulowanych domenach**, cztery pozycje dodatkowe. **Nie przeprowadzono potwierdzonej walidacji empirycznej.** Ankieta mierzy to, co uczestnik deklaruje po interakcji, nie bezpośrednią fizjologię ani przyczynową dynamikę emocji.
 
 | Domena | Co ma mierzyć | Liczba |
 | --- | --- | ---: |
@@ -16,6 +16,7 @@
 
 - [Model i hipotezy](model.md)
 - [Kwestionariusz, kanały i ograniczenia skoringu](instrument.md)
+- [**Polska wersja kwestionariusza v3.0-PL**](questionnaire-pl.md) (tłumaczenie robocze)
 - [Plan badania trafności treściowej](content-validity.md)
 - [Wywiady poznawcze: przewodnik i arkusz](cognitive-interviews.md)
 - [Następne etapy walidacji](validation.md)

@@ -14,7 +14,11 @@ Dokumenty autora opisują **propozycje projektowe**, nie przeprowadzone badania 
 | `kwestionariusz-dera-hri_v3.docx` | szkic artykułu koncepcyjno-metodologicznego | brak danych walidacyjnych; nie podaje pełnych pytań |
 | `dera-hri-protocol-v3.docx` | panel ekspertów, CVR/CVI, wywiady poznawcze | roboczy protokół, bez dowodów realizacji |
 
-**Banki:** [v2 (PL)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v2.csv) · [v2.1 (PL)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v2_1.csv) · [v3 (EN)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3.csv).
+**Banki:** [v3.0-PL (robocza adaptacja EN→PL, 27.10.2026)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_pl.csv) · [pełny formularz PL](questionnaire-pl.md) · [v2 (PL)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v2.csv) · [v2.1 (PL)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v2_1.csv) · [v3 (EN)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3.csv).
+
+## Pochodzenie wariantu PL v3
+
+Dokument [v3.0-PL](questionnaire-pl.md) opracowano jako **nowe tłumaczenie** aktualnego banku EN, uwzględniając terminologię historycznej polskiej v2.1, ale **bez automatycznego przenoszenia** jej numeracji, znaczeń czy klucza. Teksty nie były recenzowane przez niezależny panel ani sprawdzone w wywiadach poznawczych. Wersji PL i EN nie należy jeszcze uznawać za pomiarowo równoważne.
 
 ## Ustalenia dotyczące wiarygodności źródeł
 
