@@ -17,6 +17,7 @@
 - [Model i hipotezy](model.md)
 - [Kwestionariusz, kanały i ograniczenia skoringu](instrument.md)
 - [Plan badania trafności treściowej](content-validity.md)
+- [Wywiady poznawcze: przewodnik i arkusz](cognitive-interviews.md)
 - [Następne etapy walidacji](validation.md)
 - [Historia źródeł i wersji](sources.md)
 

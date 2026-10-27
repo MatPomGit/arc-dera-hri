@@ -48,6 +48,8 @@ Literatura: [Ayre i Scally 2014](https://doi.org/10.1177/0748175613513808), [Pol
 
 ## 3. Rewizja i wywiady poznawcze
 
+Przewodnik: [protokół wywiadów poznawczych](cognitive-interviews.md); [pusty arkusz obserwacji 49 pozycji](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_cognitive_log.csv). Uzupełniono neutralne sondy, kodowanie trudności, kontrolę warunków SEI i rozróżnienie danych jakościowych od skoringu.
+
 Propozycja **15–20 osób**, dwie rundy: **10**, potem **5–10** po modyfikacjach. Zastosować *think-aloud* i neutralne pytania o zrozumienie, przypomnienie doświadczenia, ocenę i wybór kategorii.
 
 Priorytet: kierunki EAR/RAR, SEI 16 i warunki kanałów, nakładanie się SEI–SAP, mentalizacja MP i [wcześniej krytykowane sformułowania](instrument.md#pozycje-wymagające-oceny-treści).

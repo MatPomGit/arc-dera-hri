@@ -32,6 +32,29 @@ class ContentValidityTests(unittest.TestCase):
                 )
             ))
 
+    def test_cognitive_log_matches_v3(self):
+        path = ROOT / "instruments" / "dera_hri_v3_cognitive_log.csv"
+        bank = load_bank()
+        with path.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        self.assertEqual(len(rows), 49)
+        self.assertEqual([row["item_id"] for row in rows], list(bank))
+        empty = (
+            "session_code", "applicable", "answer_1_7", "problem_codes",
+            "severity_0_3", "participant_paraphrase",
+            "interviewer_observation", "proposed_revision",
+        )
+        for row in rows:
+            source = bank[row["item_id"]]
+            self.assertEqual(row["text_en"], source["text_en"])
+            self.assertEqual(row["scale"], source["scale"])
+            self.assertEqual(row["condition"], source["condition"])
+            self.assertEqual(
+                row["scope"],
+                "core" if row["item_id"].isdecimal() else "supplementary",
+            )
+            self.assertTrue(all(not row[field] for field in empty))
+
     def test_domain_coverage_form(self):
         path = ROOT / "instruments" / "dera_hri_v3_domain_review.csv"
         with path.open(encoding="utf-8", newline="") as stream:

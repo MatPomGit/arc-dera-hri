@@ -1,5 +1,12 @@
 # Historia zmian
 
+## 2026-10-27 — Materiały do wywiadów poznawczych
+
+- Dodano przewodnik wywiadów dla dwóch rund, neutralne sondy, kodowanie problemów, rozdzielenie kwestii etyki i bezpieczeństwa robota.
+- Dodano pusty rejestr 49 pozycji v3, z niezmienionymi tekstami i identyfikatorami oraz testem zgodności z bankiem.
+- Rozszerzono nawigację MkDocs; brak przeprowadzonych wywiadów, danych uczestników i zmian skoringu.
+
+
 ## 2026-10-27 — Pakiet oceny treściowej i metodologii CVR/CVI
 
 - Przygotowano kompletne, puste formularze ocen 45 pozycji głównych + M1–M3/F1 oraz pokrycia pięciu domen, zachowując brzmienie v3.

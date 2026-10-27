@@ -13,6 +13,7 @@ nav:
   - Model: model.md
   - Kwestionariusz: instrument.md
   - Trafność treściowa: content-validity.md
+  - Wywiady poznawcze: cognitive-interviews.md
   - Plan walidacji: validation.md
   - Źródła i wersje: sources.md
 plugins:

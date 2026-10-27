@@ -10,11 +10,11 @@ Aktualny model proponuje **pięć domen i 45 pozycji głównych**: EAR-D (11), S
 
 - [Strona projektu](docs/index.md) i [model](docs/model.md)
 - [Kwestionariusz i administracja](docs/instrument.md)
-- [Protokół trafności treściowej](docs/content-validity.md), [kompletny arkusz ekspercki v3](instruments/dera_hri_v3_expert_form.csv), [ocena pokrycia pięciu domen](instruments/dera_hri_v3_domain_review.csv), [analiza CVR/CVI](tools/content_validity.py) i [plan walidacji](docs/validation.md)
+- [Protokół trafności treściowej](docs/content-validity.md), [kompletny arkusz ekspercki v3](instruments/dera_hri_v3_expert_form.csv), [ocena pokrycia pięciu domen](instruments/dera_hri_v3_domain_review.csv), [analiza CVR/CVI](tools/content_validity.py) i [wywiady poznawcze](docs/cognitive-interviews.md) i [plan walidacji](docs/validation.md)
 - [Źródła i wersje](docs/sources.md), [historia zmian](CHANGELOG.md)
 - Banki: [v3 (EN)](instruments/dera_hri_v3.csv), [v2.1 (PL)](instruments/dera_hri_v2_1.csv), [v2 (PL)](instruments/dera_hri_v2.csv)
 
-Po włączeniu GitHub Pages dokumentacja będzie dostępna pod adresem **https://matpomgit.github.io/arc-dera-hri/**.
+Dokumentacja MkDocs: **https://matpomgit.github.io/arc-dera-hri/** (poprzednia publikacja GitHub Actions zakończona sukcesem).
 
 ## MkDocs
 
@@ -24,6 +24,6 @@ python -m mkdocs serve
 python -m mkdocs build --strict
 ```
 
-Workflow [publikacji Pages](.github/workflows/pages.yml) buduje dokumentację przy zmianach i wdraża ją z `main`. **Pierwsze uruchomienie:** w `Settings → Pages → Build and deployment` wybierz `GitHub Actions`. Bez tego kroku samo dodanie workflow nie potwierdza działania publicznej strony.
+Workflow [publikacji Pages](.github/workflows/pages.yml) uruchamia testy, buduje MkDocs i wdraża dokumentację z `main`.
 
 Prace zgodnie z [KISS i zasadami agentów](AGENTS.md). Narzędzie dotyczy pomiaru HRI; odrębne eksperymenty z humanoidami należą do ARC-SAPIENS. Otwarte decyzje metodologiczne: [Issue #1](https://github.com/MatPomGit/arc-dera-hri/issues/1).
