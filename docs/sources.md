@@ -10,6 +10,7 @@
 | `Recenzja-DERA-HRI-2.odt` | językowo zmienione 48 pozycji; MP jako wariant | historyczna v2.1 |
 | **`DERA-HRI-3.md`** (wersja autorska 3.0, data podana: luty 2026) | **5 domen, pełny bank EN, moduły M1–M3/F1, plan 7-etapowy** | **aktualna propozycja; bez walidacji** |
 | `kwestionariusz-dera-hri_v3.docx` | angielski **szkic artykułu koncepcyjno-metodologicznego**, 45 pozycji opisanych przez zakresy ID, 13 pozycji bibliografii i propozycje progów walidacyjnych | **materiał do rewizji redakcyjnej**, nie nowa wersja instrumentu ani wynik empiryczny |
+| `dera-hri-protocol-v3.docx` (protokół 1.0, luty 2026) | projekt oceny treści: panel 12–15 ekspertów, CVR/CVI, 15–20 wywiadów poznawczych, dwie rundy | **źródło roboczego protokołu badań**, nie uzyskana zgoda ani wyniki |
 
 Wersje źródłowe są **propozycjami projektowymi**, a nie wynikami badań. Nowy bank zapisano w [`instruments/dera_hri_v3.csv`](../instruments/dera_hri_v3.csv); historyczne v2 i v2.1 pozostają nienaruszone. Zmiany treści i języka oraz nowa numeracja nie oznaczają równoważności pomiarowej.
 
@@ -45,6 +46,18 @@ Dokument źródłowy zawiera bibliografię i mapę pozycji v2→v3, lecz ich pop
 - **Zweryfikowana korekta bibliografii [3]:** Vagnetti i in., *Instruments for Measuring Psychological Dimensions in Human-Robot Interaction: Systematic Review of Psychometric Properties*, **J Med Internet Res 2024;26:e55597**, DOI [10.2196/55597](https://doi.org/10.2196/55597), a nie „2023” jak w pliku. Bibliografia [2] Fiorini i in., [10.2196/45494](https://doi.org/10.2196/45494), odpowiada publikacji z 2024. Pozostałych pozycji nie uznano automatycznie za zweryfikowane.
 
 Nie scalać tego manuskryptu z przyszłym **artykułem empirycznym o walidacji skali** jako rzekomo ukończonej analizy. Ewentualna odrębność publikacyjna wymaga oceny wkładu i polityki czasopisma.
+
+## Protokół walidacji treściowej, wersja źródłowa 1.0
+
+[Zwięzła procedura wdrożeniowa](content-validity.md) powstała na podstawie `dera-hri-protocol-v3.docx`. Do poprawienia przed rekrutacją:
+
+- W tekście i zaproszeniach występuje **44**, podczas gdy kanoniczny bank v3 liczy **45 pozycji głównych**; istnieją ponadto M1–M3 i F1. Formularz CVR/CVI należy wygenerować dla prawidłowej, zamrożonej listy ID.
+- Dokument nazywa schemat „three-phase”, po czym opisuje **cztery** fazy procesu i **siedem** etapów harmonogramu. Ujednolicić nazewnictwo; terminy 4–5 miesięcy są orientacyjne.
+- Aneksy D i E zawierają jedynie fragmenty formularzy (`[Continue for all items...]`), dlatego deklaracja `Ready for Implementation` **nie oznacza** gotowych, kompletnych formularzy ani zgody etycznej.
+- Wywiady z osobami przypominającymi interakcję sprzed **do sześciu miesięcy** nie są równoważne ankiecie 5–10 minut po sesji. Najpierw zdecydować, czy celem jest rozumienie pytań na podstawie wspomnień, czy proces odpowiedzi po świeżej, ustandaryzowanej ekspozycji.
+- Proponowane stawki **200–300 USD za ocenę ekspercką i 30–50 USD za wywiad** nie są przyjęte; projekt obowiązuje zasada bezkosztowa. **Nie proponować współautorstwa jako ekwiwalentu wynagrodzenia**: wymaga niezależnego spełnienia kryteriów wkładu, zatwierdzenia i odpowiedzialności ([ICMJE](https://icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html)).
+- CVR i CVI mają różne cele (niezbędność vs trafność/ocena zrozumiałości); progi `I-CVI 0.78`, `S-CVI/Ave 0.90` i tablice CVR zależne od N to **propozycje wymagające metodologicznego uzasadnienia**, nie automatyczny nakaz usuwania elementów unikalnych dla konstruktu.
+- Brak dostarczonych ocen ekspertów, wywiadów, protokołu zgody/zwolnienia od komisji etycznej i polityki lokalnego przechowywania nagrań. Wszystkie wyniki tabel w aneksach są **przykładami lub szablonami**.
 
 ## Reguła kolejnej aktualizacji
 

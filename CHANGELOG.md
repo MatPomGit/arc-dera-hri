@@ -1,5 +1,13 @@
 # Zmiany
 
+## 2026-10-27 — Projekt badania trafności treściowej v3
+
+- Włączono `dera-hri-protocol-v3.docx` jako **projekt protokołu 1.0**, bez potwierdzenia realizacji badań.
+- Dodano jeden [operacyjny protokół](docs/content-validity.md) panelu CVR/CVI i dwóch rund wywiadów poznawczych; bez kodu, płatnych usług i duplikowania banku pozycji.
+- Wykryto: **44 vs 45** pozycji, niekompletne aneksy D/E, niezgodność schematu faz, odległe wspomnienia uczestników, koszty i nieuprawnione oferowanie współautorstwa.
+- Zachowano **v3: 45 pozycji podstawowych + M1–M3/F1**, bez zmian skoringu i twierdzeń o walidacji.
+
+
 ## 2026-10-27 — Szkic artykułu v3 i weryfikacja źródeł
 
 - Skatalogowano `kwestionariusz-dera-hri_v3.docx` jako **manuskrypt koncepcyjno-metodologiczny**, a nie nową wersję kwestionariusza.

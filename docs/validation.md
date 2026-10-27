@@ -2,6 +2,8 @@
 
 **Status:** plan kandydujący, bez wyników empirycznych; punktem wyjścia jest bank [v3.0](../instruments/dera_hri_v3.csv). Dokument źródłowy proponuje siedem etapów i orientacyjnie 42 miesiące, lecz to **niezatwierdzony harmonogram**, podobnie jak szacunkowe N.
 
+**Operacyjny projekt pierwszego badania:** [walidacja treściowa v3, protokół roboczy](content-validity.md). Dokument określa panel ekspertów, oceny CVR/CVI, dwie rundy wywiadów poznawczych oraz rejestr decyzji. Badanie nie zostało rozpoczęte ani zatwierdzone etycznie na podstawie dostępnych materiałów.
+
 ## Bramka P0: ustalenie treści i modelu
 
 1. Panel specjalistów psychometrii/HRI/psychologii emocji: pokrycie domen, jednoznaczność, rozumienie sformułowań, ocena przydziału pozycji. CVI/CVR wyłącznie z kryteriami właściwymi dla liczby ekspertów; dla wielu oceniających nie stosować automatycznie *Cohen's κ*.

@@ -21,7 +21,7 @@ Ponadto 3 pozycje o strategiach regulacji (M1–M3) i 1 o oczekiwanych przyszły
 
 - [Model i ograniczenia](docs/model.md)
 - [Administracja, numeracja i wątpliwości dotyczące skoringu](docs/instrument.md)
-- [Plan rozwoju i walidacji](docs/validation.md)
+- [Plan rozwoju i walidacji](docs/validation.md) · [Protokół walidacji treściowej v3](docs/content-validity.md)
 - [Pochodzenie wersji, szkic artykułu i audyt cytowań](docs/sources.md)
 - [Bank v3 (EN)](instruments/dera_hri_v3.csv) · [v2.1 (PL)](instruments/dera_hri_v2_1.csv) · [v2 (PL)](instruments/dera_hri_v2.csv)
 - [Zasady agentów i KISS](AGENTS.md) · [Decyzje do zamknięcia](https://github.com/MatPomGit/arc-dera-hri/issues/1)
