@@ -32,6 +32,23 @@ class ContentValidityTests(unittest.TestCase):
                 )
             ))
 
+    def test_domain_coverage_form(self):
+        path = ROOT / "instruments" / "dera_hri_v3_domain_review.csv"
+        with path.open(encoding="utf-8", newline="") as stream:
+            rows = list(csv.DictReader(stream))
+        self.assertEqual(
+            [r["scale"] for r in rows],
+            ["EAR-D", "SEI-D", "SAP-D", "MP-D", "RAR-D"],
+        )
+        self.assertTrue(all(row["definition_en"] for row in rows))
+        self.assertTrue(all(
+            all(not row[field] for field in (
+                "coverage_1_4", "missing_facets", "overlap_with_other_scale",
+                "context_or_channel_issues", "comment",
+            ))
+            for row in rows
+        ))
+
     def test_exact_binomial_critical_counts(self):
         for n, cutoff in [(12, 10), (13, 10), (14, 11), (15, 12)]:
             with self.subTest(n=n):

@@ -10,7 +10,7 @@ Aktualny model proponuje **pięć domen i 45 pozycji głównych**: EAR-D (11), S
 
 - [Strona projektu](docs/index.md) i [model](docs/model.md)
 - [Kwestionariusz i administracja](docs/instrument.md)
-- [Protokół trafności treściowej](docs/content-validity.md), [kompletny arkusz ekspercki v3](instruments/dera_hri_v3_expert_form.csv), [analiza CVR/CVI](tools/content_validity.py) i [plan walidacji](docs/validation.md)
+- [Protokół trafności treściowej](docs/content-validity.md), [kompletny arkusz ekspercki v3](instruments/dera_hri_v3_expert_form.csv), [ocena pokrycia pięciu domen](instruments/dera_hri_v3_domain_review.csv), [analiza CVR/CVI](tools/content_validity.py) i [plan walidacji](docs/validation.md)
 - [Źródła i wersje](docs/sources.md), [historia zmian](CHANGELOG.md)
 - Banki: [v3 (EN)](instruments/dera_hri_v3.csv), [v2.1 (PL)](instruments/dera_hri_v2_1.csv), [v2 (PL)](instruments/dera_hri_v2.csv)
 

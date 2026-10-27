@@ -2,7 +2,7 @@
 
 ## 2026-10-27 — Pakiet oceny treściowej i metodologii CVR/CVI
 
-- Przygotowano kompletny, pusty arkusz ekspercki dla 45 pozycji głównych + M1–M3/F1, zachowując dokładne brzmienie v3.
+- Przygotowano kompletne, puste formularze ocen 45 pozycji głównych + M1–M3/F1 oraz pokrycia pięciu domen, zachowując brzmienie v3.
 - Dodano prostą, lokalną analizę CVR/CVI z obsługą braków i niezależnymi mianownikami oraz testami.
 - Rozdzielono oryginalne tablice Lawshego od dokładnego testu dwumianowego; dopisano ugruntowane źródła COSMIN.
 - Bez danych uczestników, ocen ekspertów ani jakichkolwiek zmian kwestionariusza.
