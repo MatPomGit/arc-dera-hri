@@ -2,43 +2,40 @@
 
 **Dynamic Embodied Relational Affect in Human–Robot Interaction**
 
-Projekt opracowania i walidacji narzędzia do badania subiektywnych procesów afektywnych podczas bezpośredniej interakcji człowieka z robotem. **Status: koncepcja i kwestionariusz rozwojowy, bez walidacji empirycznej.**
+Projekt opracowania i walidacji samoopisowego narzędzia do oceny doświadczeń afektywnych podczas **konkretnej interakcji człowieka z robotem**. **Status: projekt rozwojowy; brak walidacji i danych empirycznych.**
 
 ## Model
 
-DERA-HRI zakłada cztery współwystępujące, potencjalnie powiązane systemy:
+Cztery postulowane, współwystępujące domeny:
 
-| System | Przedmiot pomiaru |
+| System | Konstrukty kandydackie |
 | --- | --- |
-| EAR-D | Ucieleśniona reaktywność afektywna |
-| SAP-D | Predykcja społeczno-afektywna |
-| SEI-D | Ucieleśniona interpretacja semiotyczna |
-| RAR-D | Relacyjna regulacja afektywna |
+| EAR-D | Zauważane reakcje cielesne i odczucia afektywne |
+| SAP-D | Przewidywanie i poczucie kontroli zachowania robota |
+| SEI-D | Interpretacja sygnałów ruchowych, głosowych i kontekstowych |
+| RAR-D | Subiektywnie odczuwana regulacja emocji podczas interakcji |
 
-Założenie o dynamice procesów **nie zostało zweryfikowane**. Ankieta po pojedynczej interakcji mierzy deklaracje uczestnika, nie obiektywne sprzężenia zwrotne.
+Recenzja dopuszcza **alternatywny model pięcioczynnikowy** z MP-D (przypisywanie umysłu/mentalizacja), ale nie potwierdza jego trafności.
 
-## Aktualny instrument
+## Instrument
 
-- **DERA-HRI v2 (propozycja):** 48 pozycji, 12 na system; siedmiopunktowe odpowiedzi od „zdecydowanie się nie zgadzam” do „zdecydowanie się zgadzam”.
-- Administracja dotyczy **jednej zakończonej interakcji**; orientacyjnie do 5–10 minut po jej zakończeniu.
-- Nie zakłada się globalnego wyniku; podskale i sposób punktowania wymagają potwierdzenia empirycznego.
-- Brak danych empirycznych, oszacowań rzetelności i potwierdzonej struktury czynnikowej.
+- **[v2.1, propozycja po recenzji](instruments/dera_hri_v2_1.csv):** 48 pozycji (12 na domenę), odpowiedzi 1–7.
+- **[v2, wersja historyczna](instruments/dera_hri_v2.csv):** 48 pozycji, zachowana do porównania i śledzenia zmian.
+- Skala po pojedynczej, świeżo zakończonej interakcji; brak uzasadnionego wyniku globalnego.
+- **Klucz odwrócenia i skoring v2.1 są propozycją źródłową, nie zatwierdzonym algorytmem.** Szczególnie wymagają rewizji EAR-D i pozycje zależne od kanału komunikacji.
 
 ## Dokumentacja
 
-- [Model i ograniczenia](docs/model.md)
-- [Instrument, administracja i dane kontrolne](docs/instrument.md)
-- [Plan walidacji i decyzje metodologiczne](docs/validation.md)
-- [Źródła i historia rewizji](docs/sources.md)
-- [Bank pozycji v2, CSV](instruments/dera_hri_v2.csv)
-- [Zasady pracy agentów](AGENTS.md)
+- [Model i wariant MP-D](docs/model.md)
+- [Instrukcja i wersje kwestionariusza](docs/instrument.md)
+- [Plan walidacji i hipotezy](docs/validation.md)
+- [Źródła i historia zmian](docs/sources.md)
+- [Zasady minimalnego kodu i aktualizacji](AGENTS.md)
 
-## Zakres i zasady
+## Granice projektu
 
-Repozytorium dotyczy **budowy narzędzia psychometrycznego**. Eksperymentalne badania efektów autonomii/ekspresji robota jako odrębny artykuł pozostają poza jego zakresem (projekt ARC-SAPIENS).
+ARC-DERA-HRI odpowiada za rozwój **instrumentu psychometrycznego**; eksperymentalne badania skutków określonych zachowań humanoida są osobnym nurtem ARC-SAPIENS. Nie utożsamiać samoopisu z pomiarem fizjologicznym ani przekrojowych korelacji z mechanizmami przyczynowymi.
 
-Kolejne dokumenty źródłowe aktualizują istniejące pliki, zamiast mnożyć dokumentację. Oprogramowanie powstaje dopiero w razie realnej potrzeby: KISS, standardowe biblioteki, PEP 8, testy i reprodukowalność. Brak płatnych usług i domyślnie brak GitHub Actions.
+Oprogramowanie tylko wtedy, gdy potrzebne: Python, standard library, PEP 8, KISS, bez duplikowania narzędzi i dokumentacji oraz bez płatnych usług.
 
-## Następny etap
-
-Ekspercka ocena treści i wywiady poznawcze, rozstrzygnięcie niejednoznaczności pozycji, zamrożenie protokołu pilotażowego i planu walidacji. Zbieranie danych od uczestników wymaga odpowiednich zgód i procedur.
+**Następna bramka:** ocena trafności treściowej i wywiady poznawcze, następnie decyzja o rewizjach pozycji i zamrożeniu protokołu pilotażowego.

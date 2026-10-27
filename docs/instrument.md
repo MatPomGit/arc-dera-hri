@@ -1,32 +1,35 @@
-# Instrument DERA-HRI v2 (kandydat)
+# Kwestionariusz DERA-HRI (wersje rozwojowe)
 
-**Stan:** 48 projektowanych pozycji, po 12 w EAR-D, SAP-D, SEI-D i RAR-D. Dokładna treść i ID: [dera_hri_v2.csv](../instruments/dera_hri_v2.csv). **Niezwalidowany.**
+**Aktualna propozycja:** [DERA-HRI v2.1](../instruments/dera_hri_v2_1.csv), 48 pozycji i cztery postulowane domeny po 12 pozycji. [DERA-HRI v2](../instruments/dera_hri_v2.csv) pozostaje nienaruszony jako materiał porównawczy. Treść w CSV jest wierną transkrypcją propozycji z recenzji; żadna wersja nie została zwalidowana.
 
 ## Administracja
 
-Po **konkretnej, właśnie zakończonej interakcji** z robotem (zalecane 5–10 minut) uczestnik ocenia: „Poniżej znajdują się stwierdzenia dotyczące Twoich odczuć i doświadczeń podczas tej interakcji z robotem. Oceń, na ile każde stwierdzenie pasuje do Twojego doświadczenia.”
+Bezpośrednio po **jednej konkretnej interakcji z robotem**, zgodnie z wersją protokołu. Proponowana instrukcja v2.1: „Proszę odpowiedzieć, w jakim stopniu poniższe stwierdzenia opisują Pana/Pani doświadczenie w trakcie tej konkretnej interakcji z robotem.”
 
-Siedem etykiet: 1 zdecydowanie się nie zgadzam; 2 nie zgadzam się; 3 raczej się nie zgadzam; 4 ani się zgadzam, ani się nie zgadzam; 5 raczej się zgadzam; 6 zgadzam się; 7 zdecydowanie się zgadzam.
+Odpowiedzi **1–7** (v2.1: 1 „Zdecydowanie nie”, 7 „Zdecydowanie tak”). Pełne etykiety kategorii w wersji v2 i krótsze kotwice v2.1 wymagają ujednolicenia i sprawdzenia w wywiadach poznawczych. Nie wprowadzać zmienionego formularza pod tym samym ID wersji.
 
-Odpowiedzi nie odnoszą się do ogólnych postaw wobec wszystkich robotów.
+## Klucz z dokumentu źródłowego, niezatwierdzony
 
-## Klucz odpowiedzi (kandydat)
+Recenzja proponuje odwrócenie (`8 – odpowiedź`) następujących pozycji:
 
-Pozycje oznaczone w źródle jako odwrócone: **12, 17, 23, 31, 34, 36, 41, 42, 43**. Wstępna propozycja przewiduje średnie czterech podskal po odwróceniu (dla siedmiu kategorii: `8 - odpowiedź`), ale **nie jest to zatwierdzona metoda skoringu**. Brak uzasadnienia wyniku globalnego; nie obliczaj go. Przed wykorzystaniem skali do wnioskowania określ zasady braków danych oraz zatwierdź kierunek i strukturę każdej podskali.
+- EAR-D: **6, 12**;
+- SAP-D: **17, 23**;
+- SEI-D: **31, 32, 34, 36**;
+- RAR-D: **41, 42, 43**.
 
-## Metadane i kontrole poza skalą
+Kolumna `reverse` w CSV zapisuje **propozycję recenzji**, nie poprawny i zatwierdzony skoring. **Nie implementować automatycznego obliczania wyników.**
 
-Zapisywać: wersję narzędzia; ID sesji; typ robota; tryb sterowania (autonomiczny, teleoperowany lub mieszany); dostępne kanały (ruch/głos/gesty/mimika/ekran); zadanie; czas; środowisko; odstęp do wypełnienia.
+Szczególna niespójność: pozycja **6** („komfort cielesny”) jest oznaczona do odwrócenia, choć reaktywność nie oznacza automatycznie dyskomfortu. Ponadto pozycje EAR 6–9 reprezentują różne bieguny doświadczenia, a 11 mówi o przewidywalności, nie wielkości pobudzenia. Wymaga to rozdzielenia koncepcji konstruktów przed zatwierdzeniem średniej.
 
-Rozważyć jako osobne zmienne: wcześniejsze doświadczenie z robotami (0–4), komfort korzystania z technologii (1–7), nastawienie do robotów (np. licencjonowana NARS), społeczna pożądaność. Nie włączać ich do wyniku DERA-HRI.
+## Proponowane moduły analityczne
 
-## Otwarte problemy przed pilotażem
+- SAP-D: pozycje 13–18 i 23–24 jako rdzeń predykcji; 19–22 potencjalnie osobny moduł atrybucji/mentalizacji, ale **nie usuwać ich z banku v2.1 bez nowej wersji**.
+- SEI-D: 26 tylko przy obecnym głosie, 27 przy gestach/zmianach postawy, 28 przy co najmniej dwóch kanałach. **Brak zastosowania ≠ zwykły brak odpowiedzi ani wartość 4.** Proponowana średnia z dostępnych pozycji wymaga walidacji porównywalności między konfiguracjami kanałów; należy raportować zestaw i liczbę odpowiedzi.
+- RAR-D: recenzja proponuje jako rdzeń efektu **38–43, 47** (41–43 odwrócone); 37 = ogólny wpływ, 44–46 = strategie, 48 = intencja ponownej interakcji. To hipoteza strukturalna, nie końcowy wynik podskali.
+- Nie ma zatwierdzonego **wyniku globalnego**, średniej dla żadnej podskali ani zasad traktowania braków danych.
 
-- **EAR-D:** pozycje 6–9 mierzą komfort oraz sprzeczne kierunki reakcji, a 1–2 wyłącznie **spostrzeżone**, nie zmierzone zmiany fizjologiczne. Średnia może nie mieć jednorodnej interpretacji.
-- **SAP-D:** „zaskoczenie” (17) nie zawsze jest przeciwieństwem przewidywania; mentalizacja 20–22 może mierzyć atrybucję cech, a nie predykcję.
-- **SEI-D:** brak głosu (26) wymaga oznaczenia `nie dotyczy`, a nie odpowiedzi neutralnej; porównywalność wersji o różnych kanałach jest otwartym pytaniem.
-- **RAR-D:** dysregulacja (41–43) może być odrębną domeną, nie prostym odwrotnym biegunem regulacji; pozycja 48 dotyczy oczekiwanego **przyszłego** efektu, nie zakończonej interakcji.
-- Odrębnie ustalić, czy pozycje odwrócone nie wprowadzają czynnika metody.
-- Nie zmieniać cicho treści pozycji; każdą korektę wersjonować.
+## Metadane poza skalą
 
-Te uwagi to **ocena metodologiczna do sprawdzenia**, a nie zmiana dostarczonego banku pozycji.
+Wersja instrumentu, anonimowy identyfikator sesji, konfiguracja robota i tryb sterowania, użyte kanały (ruch, głos, gesty itd.), zadanie, czas interakcji i odległość czasowa do ankiety. Kontrole badawcze (do decyzji przed pilotażem): wcześniejsza ekspozycja na roboty, postawy (np. NARS), antropomorfizacja, ogólny komfort z technologią; dobór miar zewnętrznych wraz z licencją.
+
+**Do sprawdzenia:** nakładanie się 19–22 z mind perception, 31/33/35/36 z SAP, negatywnych pozycji 41–43 oraz podobieństwo semantyczne 19–20 i 31/36. Zmiany itemów wyłącznie w nowej wersji i z zapisanym uzasadnieniem.

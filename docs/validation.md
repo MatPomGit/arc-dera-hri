@@ -1,26 +1,33 @@
 # Plan walidacji DERA-HRI
 
-**Cel:** ustalić, co faktycznie mierzą pozycje v2, w jakich kontekstach i z jaką precyzją. Nie ma dotąd wyników ani zarejestrowanego, zamrożonego protokołu.
+**Status:** plan kandydacki, bez danych empirycznych. Najbliższy cel: sprawdzić trafność treściową i konstruktu banku **v2.1**, zanim powstanie finalny skoring.
 
-## Etapy i bramki
+## Etapy
 
-1. **Trafność treściowa:** mapa konstrukt–domena–pozycja, ocena ekspertów (np. CVI/CVR, z uzasadnionym kryterium) i wywiady poznawcze; poprawki zapisane jako nowa wersja.
-2. **Pilotaż administracji:** pojedyncza jasno określona interakcja, czas wypełnienia, zrozumiałość, brakujące odpowiedzi, działanie kanałów i techniczne odchylenia. Dane pilota nie są dowodem potwierdzającym czynnikowość.
-3. **Struktura:** EFA/ESEM w próbie eksploracyjnej, następnie CFA/model porównawczy na niezależnych danych; rozważyć modele 1-, 2-, 4-czynnikowe, hierarchiczne i bifaktor tylko tam, gdzie identyfikowalne i teoretycznie uzasadnione.
-4. **Rzetelność i trafność:** omega/alpha z niepewnością dla uzasadnionych skal; hipotezy zbieżne/różnicowe z SAM/PAD, NARS, zaufaniem, antropomorfizacją i akceptacją; trafność przyrostowa tam, gdzie uzasadniona.
-5. **Stabilność i uogólnianie:** powtórzenia/test–retest z uwzględnieniem charakteru **stanu**; inwariancja pomiaru między populacjami, typami robotów, kanałami i językami jedynie przy odpowiedniej próbie. Analiza sieciowa/LPA to opcjonalne uzupełnienia, nie zamienniki walidacji.
+1. **Treść:** mapa pozycja–konstrukt, panel ekspertów, CVI/CVR z uzasadnionymi kryteriami i wywiady poznawcze. Sprawdzić rozumienie EAR-D, pozycji odwróconych, kanałów SEI oraz mentalizacji SAP. W razie zmian utworzyć kolejną wersję banku.
+2. **Pilotaż proceduralny:** jednoznaczny scenariusz HRI, moment wypełnienia, aktywne kanały, `nie dotyczy`, braki odpowiedzi, czas realizacji i obciążenie badanego. Nie utożsamiać „wypełnialności” z trafnością.
+3. **Struktura:** EFA/ESEM ze swobodą teoretycznie uzasadnionych ładunków krzyżowych, a następnie niezależna CFA/porównanie modeli. Sprawdzić cztery domeny, możliwość połączenia SAP z SEI, czynnik pozycji odwróconych oraz pięcioczynnikowy wariant MP-D **tylko przy odpowiednich danych i wersji kwestionariusza**. Nie preferować automatycznie modelu pięcioczynnikowego.
+4. **Rzetelność i trafność:** omega, ewentualnie alfa, przedziały niepewności; zbieżność/różnicowanie z pobudzeniem i walencją (SAM/PAD), postawami (NARS), antropomorfizacją, zaufaniem i akceptacją. Ocena wartości przyrostowej względem postaw wobec AI.
+5. **Uogólnianie:** test–retest tylko przy porównywalnym zadaniu i definicji mierzonego stanu; niezmienniczość między typami robotów, kanałami i populacjami po uzasadnieniu liczebności. Opcjonalnie powtarzane pomiary/fizjologia do rzeczywistej analizy dynamiki.
 
-**Przed gromadzeniem danych:** ustalić populację, scenariusz, liczebność i uzasadnienie mocy/precyzji, etykę i bezpieczeństwo, dobór miar porównawczych i licencje, skoring, braki danych oraz rozdział analiz eksploracyjnych i potwierdzających. Prerejestrować hipotezy, plany wykluczeń i analiz potwierdzających.
+Przed badaniem ludzi zamrozić populację, scenariusz, zasady etyczne i bezpieczeństwa, wersję ankiety, model braków, sposób wyznaczania liczebności i analizy potwierdzające. Raportowanie według właściwych elementów AERA/APA/NCME i COSMIN po sprawdzeniu zastosowania tych standardów.
 
-## Kandydackie hipotezy walidacyjne
+## Hipotezy do rozważenia (z recenzji, **nieprerejestrowane**)
 
-- EAR-D: związki odczuwanych reakcji somatycznych z pobudzeniem oraz komfortu/unikania z walencją i akceptacją.
-- SAP-D: przewidywalność z poczuciem kontroli i zaufaniem, mentalizacja z antropomorfizacją, zaskoczenie z pobudzeniem.
-- SEI-D: czytelność i spójność sygnałów z jakością komunikacji, akceptacją i zaufaniem.
-- RAR-D: subiektywna regulacja z dobrostanem i wsparciem, a dysregulacja ze stresem oraz napięciem.
+Dla **alternatywnego modelu pięcioczynnikowego**:
+- **H1:** SEI dodatnio wiąże się z SAP.
+- **H2:** SAP dodatnio wiąże się z RAR.
+- **H3:** SAP statystycznie pośredniczy w związku SEI–RAR.
+- **H4:** MP dodatnio wiąże się z SEI i SAP.
+- **H5:** MP moderuje związek SEI–SAP (silniejszy przy większym MP).
+- **H6:** EAR ma ujemny lub zerowy związek z RAR po uwzględnieniu SAP/SEI. **Wymaga jednoznacznego, falsyfikowalnego kierunku przed analizą potwierdzającą.**
+- **H7:** EAR ma słaby ujemny związek z SAP.
+- **H8 (opcjonalna):** SAP osłabia ujemny związek EAR–RAR.
 
-Są to **hipotezy do doprecyzowania przed badaniem**, nie wyniki. Analityka sieciowa danych przekrojowych nie dowodzi sprzężeń przyczynowych. Dla modeli porównawczych raportować odpowiednie wskaźniki dopasowania, obciążenia, braki, przedziały niepewności i pełną informację o odstępstwach od planu.
+Przewidziane w recenzji korelacje (np. SAP–SEI `r≈0,50–0,70`) to **spekulacyjne oczekiwania**, a nie wyniki ani zweryfikowane założenia mocy. Nie przeliczać ich automatycznie na N. Strzałki w modelu SEM oznaczają hipotezy kierunkowe, a przekrojowa analiza nie identyfikuje wpływu przyczynowego.
 
-## Podstawy raportowania
+## Zasady analityczne
 
-Korzystać z AERA/APA/NCME i odpowiednich elementów COSMIN jako kryteriów projektowych, sprawdzając ich **zakres zastosowania** do narzędzia HRI. Nie deklarować zgodności bez audytu. Żadne oszacowania ani gotowe wyniki nie zostały dostarczone.
+Pozycje 1–7 są porządkowe: rozważyć estymator właściwy dla danych kategorialnych (np. WLSMV), alternatywnie MLR po ocenie założeń. Sposób obsługi braków zależy od estymatora; FIML nie jest automatyczną procedurą dla wszystkich wariantów WLSMV. **Strukturalna niedostępność kanału** w SEI nie jest losowo brakującą obserwacją.
+
+Przy założeniach spełnionych rozważyć modele mediacji/moderacji jako analizy wyjaśniające; wymagają jawnych ograniczeń i osobnego planu dla interakcji latentnych. Analiza sieciowa i LPA nie zastępują weryfikacji pomiarowej. Raportować wszystkie porównane modele, ładunki, niepewność i odstępstwa od protokołu.

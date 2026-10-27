@@ -1,25 +1,26 @@
 # Źródła i wersje
 
-| Źródło otrzymane od autora | Rola | Stan |
+| Dokument otrzymany od autora | Znaczenie | Status |
 | --- | --- | --- |
-| `Własny kwesionariusz.odt` | wczesny model E-HRAISE (4 czynniki + potencjalny czynnik II rzędu) | materiał historyczny, nieinstrument obowiązujący |
-| `DERA-HRI-1.pdf` (07.02.2026) | model DERA-HRI i bank 32 pozycji | wersja historyczna v1 |
-| `DERA-HRI-1_analysis.md` | wtórne streszczenie/analiza v1 | materiał pomocniczy, **nie niezależne źródło empiryczne** |
-| `Projekt-DERA-HRI-2.odt` | 48 pozycji, mapa treści, propozycja procedury i walidacji | **aktualne źródło instrumentu v2 (propozycja)** |
+| `Własny kwesionariusz.odt` | wczesny model hierarchiczny E-HRAISE | historyczna koncepcja |
+| `DERA-HRI-1.pdf` (07.02.2026) | cztery systemy DERA-HRI, 32 pozycje | historyczna v1 |
+| `DERA-HRI-1_analysis.md` | streszczenie v1 | pomocnicze, nie dowód empiryczny |
+| `Projekt-DERA-HRI-2.odt` | 48 pozycji, klucz i plan walidacji | historyczna propozycja v2 |
+| **`Recenzja-DERA-HRI-2.odt`** | krytyka v2, poprawki wszystkich 48 pozycji, klucz, model MP-D, hipotezy SEM | **aktualna propozycja v2.1; nie jest raportem z badań** |
 
-Pliki źródłowe zostały udostępnione w rozmowie; repozytorium przechowuje **uporządkowaną reprezentację naukową** i maszynowo czytelny bank pozycji. Nie przypisuj im nieistniejącej daty publikacji, statusu recenzji ani wyników.
+Banki `instruments/dera_hri_v2.csv` i `instruments/dera_hri_v2_1.csv` utrzymują zgodne ID 1–48, ale **odmienne brzmienia**. Nie wolno scalać odpowiedzi z różnych wersji bez oceny równoważności. Źródła udostępniono w rozmowie; repozytorium zachowuje uporządkowaną reprezentację, nie surowe pliki ODT.
 
-## Zmiana v1 → v2
+## Co zmienia v2.1
 
-- 32 → **48 pozycji**, po 12 dla EAR-D, SAP-D, SEI-D, RAR-D.
-- EAR-D: zastąpienie deklaracji „przed świadomością” pytaniami o zaobserwowane reakcje.
-- SAP-D: predykcja, uczenie się, zaskoczenie i poczucie kontroli.
-- SEI-D: rozróżnienie kanałów ekspresji, ich spójności i interpretacji kulturowej.
-- RAR-D: uwzględnienie dysregulacji i strategii regulacji.
-- Zmienił się zbiór pozycji odwróconych; **nie przenosić klucza v1 na v2**.
+- EAR-D: opisuje zauważane reakcje, nie nieświadomą fizjologię; pozycja 11 o przewidywalności reakcji.
+- SAP-D: usuwa część jawnie mentalistycznych wyrażeń, ale **19–22 nadal** mogą mierzyć ocenę sprawczości; wariant MP-D pozostaje alternatywą.
+- SEI-D: pozycje 26–28 są warunkowe względem kanałów; oddzielić `nie dotyczy` od braków odpowiedzi.
+- RAR-D: pozycje 37, 44–46 i 48 są proponowane **poza rdzeniem wyniku regulacji**.
+- Źródłowy klucz v2.1 dodaje odwrócenie **6 i 32** względem v2; pozycja 6 ma nierozstrzygniętą interpretację, dlatego **nie zatwierdzono skoringu**.
+- Dopuszcza się modele alternatywne: cztery domeny lub pięć z osobnym MP-D. Hipotezy kierunkowe są propozycją, nie prerejestracją.
 
-Dokument v2 zawiera sugestię średnich podskal, hipotezy korelacyjne i dobór metod. Są to propozycje. Nie ustalono zatwierdzonego skoringu, trafności, rzetelności, próby ani decyzji o strukturze czynnikowej.
+Pojęcie „recenzja” pochodzi z nazwy przekazanego dokumentu: nie stanowi poświadczenia formalnej recenzji redakcyjnej. Przywołania w nim mają często formę domen/skrótów bez kompletnych metadanych; bibliografię i aktualność standardów trzeba zweryfikować przed wykorzystaniem w publikacji.
 
-## Zasada przyjmowania następnych dokumentów
+## Kolejne dokumenty
 
-Dla kolejnego pliku: ustal co wnosi; zachowaj tekst już udokumentowany, jeśli nowy materiał go nie obala; w przypadku sprzeczności opisz wybór i ograniczenia. Modyfikuj istniejące pliki i bank wersjonowany, zamiast tworzyć podobne dokumenty. Ostatni zweryfikowany stan zapisuj w `CHANGELOG.md`.
+Porównać nowy materiał z aktualnym stanem; aktualizować istniejące opisy, tworzyć nową wersję instrumentu **tylko przy rzeczywistej zmianie treści lub klucza**, zapisać nierozstrzygnięte sprzeczności i zaktualizować `CHANGELOG.md`. Nie utożsamiać propozycji z przyjętą decyzją badawczą.

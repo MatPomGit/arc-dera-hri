@@ -1,24 +1,36 @@
 # Model teoretyczny DERA-HRI
 
-**Status:** model postulowany, niewalidowany (wersja rozwojowa v2).
+**Status:** koncepcja czterech powiązanych domen; v2.1 jest propozycją po krytycznej analizie, niezwalidowaną.
 
-DERA-HRI (*Dynamic Embodied Relational Affect in Human–Robot Interaction*) opisuje cztery **współwystępujące, potencjalnie oddziałujące** systemy:
-
-| System | Znaczenie | Wskaźniki proponowane w v2 |
+| Domena | Definicja robocza | Ograniczenie |
 | --- | --- | --- |
-| EAR-D | Reakcje afektywno-somatyczne na obecność i zachowanie robota | oddech, tętno, napięcie, komfort, podejście/unikanie, kontrola |
-| SAP-D | Tworzenie i aktualizowanie przewidywań dotyczących robota | przewidywalność, zaskoczenie, uczenie się, mentalizacja |
-| SEI-D | Interpretacja sygnałów robota w kontekście | ruch, głos, gesty, spójność kanałów, znaczenie, kultura |
-| RAR-D | Subiektywnie odczuwana regulacja afektywna w interakcji | spokój, stres, reinterpretacja, dystrakcja, ekspresja, kontrola |
+| EAR-D | Zauważane reakcje cielesne i pobudzenie podczas HRI | deklaracje o ciele ≠ obiektywny pomiar fizjologii |
+| SAP-D | Przewidywanie reakcji robota i poczucie kontroli | może mieszać przewidywalność z przypisywaniem umysłu |
+| SEI-D | Interpretacja sygnałów i ich dopasowanie do sytuacji | częściowo pokrywa się z SAP; zależy od kanałów |
+| RAR-D | Subiektywnie doświadczane wsparcie lub zakłócenie regulacji emocji | efekt, strategia i przyszła intencja to różne zmienne |
 
-Model zastąpił wcześniejsze hierarchiczne założenie E-HRAISE o sztywnej kolejności etapów. **Nie jest przesądzone**, czy dane uzasadnią cztery czynniki, ich powiązania czy strukturę sieciową.
+Systemy **nie tworzą założonej sekwencji etapów** ani obligatoryjnego czynnika ogólnego. Model historyczny E-HRAISE postulował strukturę hierarchiczną; DERA-HRI v1/v2 zmienił tę perspektywę. Sama nazwa „dynamic” nie potwierdza dynamiki: do badania relacji czasowych niezbędne są dane procesowe/powtarzane, nie pojedyncza ankieta po interakcji.
 
-## Granice interpretacji
+## Hipoteza alternatywna: pięć czynników
 
-- Kwestionariusz po interakcji mierzy **subiektywne deklaracje**, nie bezpośrednio tętno, synchronię czy nieświadome reakcje.
-- Pytania o intencje lub „emocje” robota mierzą **atrybucje uczestnika**, nie świadomość ani faktyczne stany wewnętrzne robota.
-- Pojedynczy pomiar przekrojowy nie dowodzi dynamiki ani przyczynowego sprzężenia zwrotnego. Do weryfikacji procesów czasowych potrzebne są pomiary powtarzane i/lub dane behawioralne/fizjologiczne.
-- Pozycje o komforcie, dyskomforcie, aktywności i kontroli mogą reprezentować różne procesy. Łączenie ich w średnią jest hipotezą pomiarową.
-- Użyteczność w opiece, edukacji czy terapii jest możliwym zastosowaniem, nie potwierdzonym efektem klinicznym.
+Recenzja proponuje wyłączenie przypisywania umysłu z SAP:
 
-Źródła i historia ewolucji: [sources.md](sources.md).
+- **SAP-P (predykcja/kontrola):** pozycje 13–18, 23–24.
+- **MP-D (mind perception):** osobny konstrukt, cztery *proponowane* wskaźniki:
+  - MP1: „Miałem/am wrażenie, że robot realizuje własny cel w tej interakcji.”
+  - MP2: „Zachowanie robota sprawiało wrażenie intencjonalnego.”
+  - MP3: „Robot wydawał się reagować w sposób «celowy», a nie przypadkowy.”
+  - MP4: „Odczuwałem/am, że robot działa w oparciu o wewnętrzne «stany» (np. tryb, nastawienie).”
+
+Pozostałe konstrukty: EAR-D, SEI-D, RAR-D. MP1–MP4 nie należą do banku v2.1 i **nie są automatycznie dodawane do ankiety**; wariant wymaga osobnego planu oceny treści i struktury.
+
+Jako **hipotezy**, nie dowody, recenzja proponuje układ `SEI → SAP → RAR`, wpływ EAR na RAR i opcjonalną moderację `MP × SEI → SAP`. Dane przekrojowe pozwalają porównywać modele korelacyjne, lecz bez dodatkowych założeń/procedur nie ustalą kierunku przyczynowego.
+
+## Warunki interpretacji
+
+- SAP i SEI mogą wykazywać wysokie ładunki krzyżowe; ich odrębność jest pytaniem empirycznym.
+- W EAR-D mierzona jest samoocena doznań (interoceptive sensibility), nie dokładność detekcji tętna czy HRV; dla silniejszych twierdzeń należy dodać pomiary niezależne (np. oddech, EDA lub HRV).
+- Pozycje 19–22 mogą nadal reprezentować ocenę zdolności robota, a nie samą predykcję. MP-D nie jest uznany za piąty czynnik bez danych.
+- Treść RAR-D obejmuje procesy o różnym znaku i znaczeniu; wynik nie może zastąpić pełnego opisu profilu odpowiedzi.
+
+Źródła i wersje: [sources.md](sources.md).
