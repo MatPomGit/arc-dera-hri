@@ -1,63 +1,44 @@
-# Kwestionariusz DERA-HRI
+# Kwestionariusz i administracja
 
-**Aktualny bank źródłowy:** [v3.0 EN](../instruments/dera_hri_v3.csv), **45 pozycji rdzenia + 4 modułów**, odpowiedzi 1–7. Archiwalne banki [v2.1](../instruments/dera_hri_v2_1.csv) i [v2](../instruments/dera_hri_v2.csv) pozostają bez zmian. Tekst angielski v3 nie jest zwalidowaną adaptacją wcześniejszej wersji polskiej.
+**Bank kandydujący:** [DERA-HRI v3.0 (EN)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3.csv). Potwierdzono zgodność 49/49 brzmień ze źródłowym `opis-kwestionariusza_v3.docx`. Historyczne [v2.1](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v2_1.csv) i [v2](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v2.csv) nie są równoważnymi wersjami językowymi v3.
 
-## Administracja (propozycja v3)
+| Domena | Identyfikatory v3 | Pozycje |
+| --- | --- | ---: |
+| EAR-D | 1–11 | 11 |
+| SEI-D | 12–23 | 12 |
+| SAP-D | 24–33 | 10 |
+| MP-D | 34–37 | 4 |
+| RAR-D | 38–45 | 8 |
+| Strategie RM | M1–M3 | 3 |
+| Oczekiwany wpływ F1 | F1 | 1 |
 
-Uczestnik odnosi wszystkie odpowiedzi do **jednej zakończonej interakcji** (zalecane bezpośrednio, orientacyjnie 5–10 minut po sesji i przed debriefingiem). Siedmiopunktowa skala zgody, od 1 „Strongly disagree” do 7 „Strongly agree”, z etykietą każdej kategorii. Dane sesji: wersja formularza i język, robot, zadanie, tryb sterowania, czas, dostępne kanały ekspresji, opóźnienie do ankiety, brakujące/niezastosowane pytania.
+**Suma: 45 podstawowych + 4 dodatkowe = 49** (nie 44, jak w niektórych wstępach źródeł). M1–M3 i F1 raportować oddzielnie; F1 pyta o **przewidywany wpływ regularnych interakcji na samopoczucie**, a nie deklarowaną chęć kolejnego spotkania.
 
-| Moduł | ID źródłowe v3 | Reguła źródłowa |
-| --- | --- | --- |
-| EAR-D | 1–11 | wszystkie |
-| SEI-D | 12–23 | 12–15 zależne od ruchu/głosu/gestów/mimiki |
-| SAP-D | 24–33 | wszystkie |
-| MP-D | 34–37 | wszystkie |
-| RAR-D | 38–45 | wszystkie |
-| RM | M1–M3 | strategie, raportowanie osobno |
-| FII | F1 | oczekiwany przyszły wpływ na samopoczucie, osobno |
+## Proponowana administracja
 
-**Pełna skala odpowiedzi według formularza v3:** 1 Strongly disagree; 2 Disagree; 3 Somewhat disagree; 4 Neither agree nor disagree; 5 Somewhat agree; 6 Agree; 7 Strongly agree. Formularz przewiduje osobne, krótkie instrukcje dla EAR (odczucia cielesne), SEI (interpretacja sygnałów), SAP (przewidywanie), MP (przypisywanie stanów) i RAR (wpływ emocjonalny). Skrypt dla uczestnika podkreśla wyłącznie **właśnie zakończoną sesję**, brak poprawnych/niepoprawnych odpowiedzi i zachowanie poufności.
+Ankieta dotyczy **jednej właśnie zakończonej interakcji**. Wersja źródłowa zaleca podanie formularza **5–10 minut** po sesji, przed debriefingiem, w poufnym otoczeniu. Uczestnik odpowiada na podstawie własnego doświadczenia, nie ogólnych przekonań o robotach.
 
-**SEI 16** w źródle umieszczono wśród pytań obowiązkowych, lecz pyta o zgodność **różnych kanałów**. Jeśli dostępny był jeden kanał, odpowiedź jest strukturalnie niemożliwa: oznaczenie `multichannel_review` w CSV sygnalizuje wymaganą decyzję. Nie imputować „4” za brak kanału.
+**Siedem kategorii zgody:** 1 Strongly disagree; 2 Disagree; 3 Somewhat disagree; 4 Neither agree nor disagree; 5 Somewhat agree; 6 Agree; 7 Strongly agree.
 
-## Skoring: **NIEZATWIERDZONY**
+Zapis sesji powinien identyfikować wersję i język instrumentu, scenariusz, robota, sterowanie, dostępne kanały, czas i moment wypełnienia. Surowych danych uczestników nie przechowywać w publicznym repozytorium.
 
-W dokumencie v3 proponuje się średnie odpowiedzi z każdej podskali, zerowe odwracanie, tolerancję do 20% zwykłych braków, progi 1–2,33 / 2,34–4,66 / 4,67–7 oraz reguły wykluczeń (m.in. wypełnienie w czasie poniżej 3 minut). **To propozycje autora dokumentu, bez walidacji; nie implementować ich automatycznie.**
+## Kanały ekspresji
 
-Istotne sprzeczności:
-- **EAR-D 6–9:** komfort, dyskomfort, podejście i unikanie mają różne znaki, nie wyznaczają jednorodnego „nasilenia reaktywności”.
-- **SEI-D 19 i 22:** niejasność i utrudnienie interpretacji mają przeciwny kierunek do czytelności; 20 (zmiana interpretacji) także nie jest jednoznacznie ujemna.
-- **SAP-D 28 i 30:** zaskoczenie/nieprzewidywalność nie rosną w tym samym kierunku co przewidywalność.
-- **RAR-D 38 oraz 42–44:** 38 nie określa walencji, 42–44 opisują destabilizację i stres, a 39–41/45 poprawę regulacji.
-- **SEI-D 12–16:** różna liczba kanałów zmienia zawartość pomiaru; średnie z różnych zestawów pozycji nie są z definicji porównywalne.
-- Nie istnieją normy ani klinicznie uzasadnione progi wyników; „wysoki RAR” nie ma ustalonej interpretacji.
+SEI 12–15 odpowiadają odpowiednio za ruch, głos, gesty i mimikę. Jeśli kanał nie występuje, stosować **`nie dotyczy`**, nie wartość neutralną. **SEI 16** wymaga co najmniej dwóch rozróżnialnych kanałów, mimo że źródło nazywa je bezwarunkowym. Regułę kwalifikowania pozycji i porównywalności wyników trzeba zatwierdzić przed pilotażem.
 
-Kolumna `source_reverse=false` **odtwarza deklarację v3**, a nie potwierdza, że wyliczenie prostych średnich jest prawidłowe. Ostateczne kierunki, selekcję pozycji, braki danych i reguły wyliczeń należy zatwierdzić po ocenie treściowej i analizie empirycznej.
+## Punktowanie: brak zatwierdzonego klucza
 
-## Nierozwiązane regresje treściowe v2.1 → v3
+Źródła v3 proponują proste średnie i brak odwracania pozycji. Nie ma jednak uzasadnienia dla monotonicznego wyniku w mieszanych kierunkowo domenach:
 
-Porównanie v3 z wcześniej dostarczoną recenzją v2 pokazuje, że część sformułowań skrytykowanych i poprawionych w kandydacie v2.1 **wróciła w angielskim banku v3**:
+- **EAR 6–11:** komfort, dyskomfort, podejście, unikanie, niesamowitość i kontrola mają różne znaczenia.
+- **SEI 19, 20, 22:** trudność interpretacji, zmiana znaczenia i zakłócenie sztucznością nie są równoważne czytelności.
+- **SAP 28, 30:** zaskoczenie/nieprzewidywalność przeczą części innych pozycji.
+- **RAR 38, 42–44:** niesprecyzowany wpływ i pogorszenie stanu emocjonalnego nie są tym samym co uspokojenie.
 
-- **EAR 11:** jednocześnie „przewidywalne” i „pod kontrolą” (dwa konstrukty w jednym pytaniu); w v2.1 rozdzielono te pojęcia.
-- **SEI 19 i 22:** ponownie „what the robot meant” (mentalizacja) i „artificiality” (ocena estetyczno-postawowa) zamiast samej czytelności sygnałów.
-- **SAP 26 i 32:** „without reason” zakłada interpretację przyczyn zachowania, a „Thanks to predictability” narzuca zależność przyczynową w treści pozycji; v2.1 proponowała bardziej neutralne odpowiedniki.
+**Nie używać automatycznych średnich, progów „niski/średni/wysoki”, norm klinicznych ani wyniku globalnego**. Limit 20% braków i wykluczanie wypełnień krótszych niż 3 minuty pozostają propozycjami źródłowymi.
 
-Wymagana jest **ponowna ocena treściowa tych sześciu pozycji**; zachować bank źródłowy v3 bez zmian do czasu decyzji i wersjonowanej rewizji. [Przegląd decyzji](https://github.com/MatPomGit/arc-dera-hri/issues/1).
+## Pozycje wymagające oceny treści
 
-## Zgodność z manuskryptem v3
+W v3 powróciły sformułowania krytykowane w recenzji v2.1: **EAR 11** łączy przewidywalność z kontrolą; **SEI 19/22** wprowadzają interpretowanie intencji i sztuczność; **SAP 26/32** sugerują przyczyny lub narzucają związek przyczynowy. Ponadto MP-D koncentruje się na przypisywanej sprawczości, nie pełnym rozumieniu *mind perception*.
 
-Przesłany szkic artykułu `kwestionariusz-dera-hri_v3.docx` powtarza poprawną liczbę **45 pozycji głównych**, ale nie zawiera pełnego tekstu kwestionariusza, mimo deklaracji w części „Data Availability”. Jedynym aktualnym kompletnym bankiem jest [v3 CSV](../instruments/dera_hri_v3.csv). W szkicu zaproponowano ponadto próg „minimum 6” wypełnionych pozycji SEI-D; **nie rozwiązuje on** problemu strukturalnego braku kanału lub interpretacji SEI 16. Traktować go jako niezatwierdzoną regułę źródłową.
-
-## Pełny formularz źródłowy v3
-
-`opis-kwestionariusza_v3.docx` zawiera **wszystkie 45 pytań głównych i M1–M3/F1**. Porównanie pełnego tekstu każdego z 49 stwierdzeń potwierdziło zgodność z [bankiem CSV](../instruments/dera_hri_v3.csv). **Nie tworzyć nowego banku ani wersji z identycznych pozycji.**
-
-Dokument zaleca ocenę 5–10 minut po interakcji, przed omówieniem z uczestnikiem, w spokojnym miejscu, oraz wstępne zaznaczenie dostępnych kanałów. Wskazówka „complete all items without skipping any” jest **sprzeczna z warunkowym pomijaniem SEI 12–15** (oraz problematycznym SEI 16); protokół administracji musi wyraźnie dopuszczać `nie dotyczy`.
-
-**F1** dotyczy przekonania, że regularne interakcje mogą **wpływać na samopoczucie**; nie mierzy wprost zamiaru ponownego kontaktu, chęci korzystania ani akceptacji. Źródłowa nazwa *Future Interaction Intentions* jest więc szersza niż rzeczywista treść tej pozycji. Nie interpretować F1 jako behawioralnej intencji bez rewizji i oceny treściowej.
-
-Szkic przewiduje dodatkowe podwymiary/profilowanie (m.in. somatyka 1–4, strategie podejście/unikanie 8–9, błędy predykcji 28/30, dodatnia 39–41/45 i ujemna regulacja 42–44), ale są to **propozycje analiz eksploracyjnych**. Uśrednianie pozycji o przeciwnych kierunkach nie zostało uzasadnione; nie stosować progów „niski/średni/wysoki” ani klinicznej interpretacji `EAR >6`.
-
-## Wersjonowanie
-
-Numeracja **v3 jest nowa**; ID v2/v2.1 nie mogą być używane wymiennie. Źródło podaje mapowanie w dodatku B; mapę tę należy niezależnie zweryfikować przed analizą międzywersyjną. Dane powinny zawierać wersję, język oraz dokładny identyfikator pozycji. **Nie scalać odpowiedzi z różnie sformułowanych wersji bez oceny równoważności.**
+**Nie modyfikować pozycji w istniejącym pliku**: rewizja wymaga nowego banku i rejestru decyzji. Zobacz [trafność treściową](content-validity.md) i [otwarte Issue #1](https://github.com/MatPomGit/arc-dera-hri/issues/1).

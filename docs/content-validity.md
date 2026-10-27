@@ -1,46 +1,31 @@
-# Badanie trafności treściowej DERA-HRI v3
+# Badanie trafności treściowej
 
-**Status:** projekt operacyjny na podstawie `dera-hri-protocol-v3.docx` (protokół źródłowy 1.0, luty 2026). **Nie potwierdzono zgody etycznej, rekrutacji ani wyników.** Badanie ma poprzedzać pilotaż i właściwą walidację czynnikową; nie stanowi samo w sobie potwierdzenia pięcioczynnikowego modelu.
+**Status: projekt badania, bez potwierdzonej zgody etycznej, ocen ekspertów i wywiadów.** Podstawa: `dera-hri-protocol-v3.docx` (protokół 1.0). [Kanoniczny bank v3](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3.csv) zawiera **45 pozycji głównych**, a nie 44.
 
-## Przed uruchomieniem
+## 1. Przygotowanie
 
-- Zamrozić [bank v3](../instruments/dera_hri_v3.csv): **45 pozycji głównych** (EAR 11, SEI 12, SAP 10, MP 4, RAR 8). M1–M3/F1 oceniać osobno tylko, jeśli włączono moduły. Źródłowe „44 items” jest błędem.
-- Uzgodnić język ankiety, scenariusz HRI, dostępne kanały SEI, definicje pięciu domen i zakres adult population. Uwzględnić [problemy treści v3](instrument.md#nierozwiązane-regresje-treściowe-v21--v3).
-- Uzyskać właściwą opinię/zgodę lub udokumentowane zwolnienie etyczne, informację dla uczestników, zgodę na nagrywanie, zasady ochrony i okresu przechowywania danych. Status „Ready for Implementation” w źródle nie jest taką zgodą.
-- Wygenerować **kompletne** arkusze dla wszystkich ID z CSV. Aneksy D/E w źródle to niekompletne przykłady, a nie 45 gotowych kart.
+Ustalić uczestników docelowych, język, scenariusz HRI, definicje domen oraz warunki kanałowe. Wymagana jest odpowiednia opinia/zgoda etyczna lub udokumentowane zwolnienie, zgody na ewentualne nagrywanie i plan ochrony danych. Formularze ekspertów muszą zawierać wszystkie właściwe ID i pełne brzmienia pytań: aneksy w źródle są niekompletne.
 
-## Etap 1. Panel ekspercki (propozycja: 12–15 osób)
+## 2. Ocena ekspertów
 
-Reprezentacja: HRI/robotyka (4–5), badania emocji (3–4), psychometria (2–3), zastosowania HRI (2–3). Liczby to cele rekrutacyjne, nie twarde warunki dopuszczenia; szczególnie rejestrować rzeczywistą liczbę ocen dla każdej pozycji.
+Proponowany panel **12–15 osób**, reprezentujący HRI/robotykę, naukę o emocjach, psychometrię i zastosowania HRI. Każdy ocenia niezbędność pozycji (`essential / useful / unnecessary`) oraz osobno trafność, jasność i prostotę (trzy skale 1–4), z możliwością komentarza.
 
-Każdy ekspert ocenia **każdą właściwą pozycję** pod kątem:
-- niezbędności: `essential / useful but not essential / not necessary` (CVR);
-- trafności względem domeny, jasności i prostoty: trzy odrębne skale **1–4** (CVI lub analogiczne wskaźniki jakości);
-- dopasowania do konstruktu, brakujących treści, redundancji, warunków kanałowych i poprawek językowych (komentarze).
+- **CVR Lawshego:** `(ne - N/2) / (N/2)`, gdzie `ne` to liczba ocen **essential**; nie mylić z odsetkiem ocen trafności 3–4.
+- **I-CVI:** proporcja ocen 3–4, osobno dla danej cechy; **S-CVI/Ave:** średnia I-CVI w domenie.
+- Rejestrować `N` dla każdej pozycji, zakres konstruktu, uwagi jakościowe i wybraną tabelę wartości krytycznych. W źródle pojawiają się orientacyjne granice (I-CVI ≥0,78, S-CVI/Ave ≥0,90); **nie są automatyczną regułą usuwania**.
 
-Nie korzystać z błędnej definicji z `opis-kwestionariusza_v3.docx`, gdzie `ne` uzyskano z ocen trafności 3–4. **CVR = ocena niezbędności**, I-CVI = odsetek ocen 3–4 trafności/jasności/prostoty. Proponowana w tym źródle `Cohen's κ` jest miarą dla dwóch oceniających; przy większej liczbie ekspertów określić odpowiednią miarę zgodności wieloosobowej i nie stosować niezweryfikowanych progów CVR (np. `0,62 przy N=5`) jako automatycznych bramek.
+## 3. Rewizja i wywiady poznawcze
 
-**Obliczenia:** `CVR = (ne - N/2)/(N/2)`; `I-CVI = liczba ocen 3–4 / N`, osobno dla kryterium; `S-CVI/Ave = średnia I-CVI`; opcjonalnie `S-CVI/UA = udział pozycji z pełną zgodą`. Raportować dokładne `N`, `ne`, zasady braków i niepewność. Źródło podaje dla CVR przykładowe kryteria **0,56 przy N=12** i **0,49 przy N=15**, oraz dla I-CVI propozycję **≥0,78** i S-CVI/Ave **≥0,90**. Przed badaniem wskazać wybraną wersję tablic, metodę interpretacji i sposób postępowania z oceną jasności/prostoty. **Nie odrzucać pozycji automatycznie** na podstawie jednego wskaźnika.
+Propozycja **15–20 osób**, dwie rundy: **10**, potem **5–10** po modyfikacjach. Zastosować *think-aloud* i neutralne pytania o zrozumienie, przypomnienie doświadczenia, ocenę i wybór kategorii.
 
-## Etap 2. Rewizja pozycji
+Priorytet: kierunki EAR/RAR, SEI 16 i warunki kanałów, nakładanie się SEI–SAP, mentalizacja MP i [wcześniej krytykowane sformułowania](instrument.md#pozycje-wymagające-oceny-treści).
 
-Połączyć wskaźniki, komentarze ekspertów i pokrycie konstruktu. Dla każdego ID zapisać `keep / revise / remove / re-test`, podstawę decyzji i proponowany tekst. Zmiany po zamrożeniu banku tworzą **nową wersję** kwestionariusza; nie zmieniać potajemnie pliku v3.
+Wywiady o interakcji sprzed do sześciu miesięcy (propozycja źródłowa) **nie są równoważne** badaniu odpowiedzi po świeżym doświadczeniu. Dla oceny procesu odpowiedzi preferować świeżą sesję lub jawnie ograniczyć cel badania do zrozumiałości tekstu.
 
-## Etap 3. Wywiady poznawcze (propozycja: 15–20 osób)
+## 4. Decyzja o pilotażu
 
-Dwie rundy: pierwsza **10 osób**, druga **5–10** po wprowadzeniu poprawek. Metoda: *think-aloud* oraz neutralne dopytywanie o rozumienie, przypominanie doświadczenia, ocenę i wybór odpowiedzi. Kodować trudności semantyczne, pamięciowe, poznawcze, związane ze skalą i z zakresem konstruktu. Priorytet: EAR 11, SEI 16/19/22, SAP 26/32, kierunek RAR 38–45, MP i faktycznie dostępne kanały.
+Dla każdego ID zapisać: wersję, tekst, domenę, CVR, I-CVI, komentarze, problemy wywiadów, decyzję `keep/revise/remove/retest` i uzasadnienie. Zachować pokrycie konstruktu; nie skreślać pozycji wyłącznie z powodu jednego progu. Każda realna zmiana brzmienia powoduje **nową wersję instrumentu**.
 
-**Ważna decyzja:** protokół źródłowy dopuszcza wspomnienia interakcji sprzed **6 miesięcy**, ale docelowy formularz mierzy sesję ocenianą **5–10 minut po zakończeniu**. Dla oceny działania pomiaru preferować świeże, porównywalne doświadczenie robota; wywiady o odległym wspomnieniu mogą służyć jedynie wstępnemu badaniu zrozumiałości, z jawnie ograniczoną interpretacją. Kolejna runda powinna sprawdzić, czy rewizja poprawiła rozumienie bez nowych problemów.
+Do przejścia dalej potrzebne są wykonane oceny, rozstrzygnięte reguły SEI, udokumentowana decyzja o banku i protokół [pilotażu](validation.md). Nie wymaga się jeszcze alfa, omega ani CFA.
 
-## Etap 4. Raport i bramka do pilotażu
-
-W jednym rejestrze pozycji zapisać: ID, wersję, domenę, pierwotne/zmienione brzmienie, `ne/N`, CVR, I-CVI (trzy kryteria), komentarze, problemy wywiadów, decyzję i uzasadnienie. Raport powinien uwzględnić zarówno wyniki pozytywne, jak i negatywne oraz niepewność interpretacji i brakujące domeny.
-
-Bramka: komplet materiałów, rzeczywista ocena treści przez panel i docelową grupę, rozstrzygnięte problemy kanałowe, zatwierdzony zestaw pozycji/administracja oraz protokół pilotażu. **Brak wymogu uzyskania na tym etapie alfa/omega, CFA czy zatwierdzonego skoringu.** Plan przyszłych analiz pozostaje w [validation.md](validation.md).
-
-## Bezpieczeństwo, etyka i koszty
-
-- Udział dobrowolny; oddzielić klucz identyfikacyjny od pseudonimizowanych ocen i transkrypcji. Nagrania, dane osobowe i formularze zgód **nie trafiają do publicznego GitHuba**.
-- Korzystać z bezpłatnych środków instytucjonalnych i dobrowolnej współpracy; źródłowe honoraria $200–300 za eksperta i $30–50 za wywiad **nie są zatwierdzonym budżetem**.
-- **Nie oferować współautorstwa za samo wypełnienie formularza.** Autorstwo oceniać odrębnie według polityki czasopisma i [ICMJE](https://icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html).
-- Plan źródłowy: ~**16–18 tygodni** (4–5 miesięcy). To scenariusz, nie zobowiązanie terminowe; harmonogram dostosować do dostępności ekspertów i wymagań komisji.
+**Koszty i autorstwo:** brak zatwierdzonego budżetu; nie zakładać honorariów z pliku źródłowego. Udział w panelu nie uprawnia sam w sobie do współautorstwa. Nagrania i dane osobowe pozostają poza publicznym GitHubem.

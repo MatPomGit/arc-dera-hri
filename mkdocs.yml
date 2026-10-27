@@ -1,0 +1,23 @@
+site_name: ARC-DERA-HRI
+site_description: Rozwój i walidacja kwestionariusza doświadczeń afektywnych w HRI
+site_url: https://matpomgit.github.io/arc-dera-hri/
+repo_url: https://github.com/MatPomGit/arc-dera-hri
+repo_name: MatPomGit/arc-dera-hri
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site
+theme:
+  name: readthedocs
+nav:
+  - Projekt: index.md
+  - Model: model.md
+  - Kwestionariusz: instrument.md
+  - Trafność treściowa: content-validity.md
+  - Plan walidacji: validation.md
+  - Źródła i wersje: sources.md
+plugins:
+  - search
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true

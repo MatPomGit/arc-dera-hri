@@ -2,34 +2,28 @@
 
 **Dynamic Embodied Relational Affect in Human–Robot Interaction**
 
-Projekt opracowania i walidacji kwestionariusza samoopisowego doświadczeń afektywnych po **konkretnej interakcji z robotem**. **Status: wersja rozwojowa, bez wyników walidacji empirycznej.**
+Rozwój i walidacja kwestionariusza samoopisowego doświadczeń afektywnych po konkretnej interakcji człowieka z robotem. **Status: wersja rozwojowa v3.0; brak danych potwierdzających trafność, rzetelność i strukturę czynnikową.**
 
-## Aktualny model: DERA-HRI v3.0 (propozycja)
+Aktualny model proponuje **pięć domen i 45 pozycji głównych**: EAR-D (11), SEI-D (12), SAP-D (10), MP-D (4), RAR-D (8). Dodatkowe pozycje M1–M3 opisują strategie regulacji, a F1 przekonanie o możliwym przyszłym wpływie interakcji. **Łącznie 49 pozycji.** Treść pozycji, skoring i interpretacja wyników nie są jeszcze zatwierdzone psychometrycznie.
 
-| Domena | Przedmiot pomiaru | Pozycje |
-| --- | --- | ---: |
-| EAR-D | Subiektywnie zauważane reakcje cielesne | 11 |
-| SEI-D | Interpretacja sygnałów i ekspresji robota | 12 |
-| SAP-D | Predykcja zachowania i uczenie się przewidywalności | 10 |
-| MP-D | Przypisywanie robotowi stanów umysłowych i intencji | 4 |
-| RAR-D | Subiektywna regulacja afektywna w relacji z robotem | 8 |
-| **Razem** | **Pięć hipotetycznych domen** | **45** |
+## Dokumentacja
 
-Ponadto 3 pozycje o strategiach regulacji (M1–M3) i 1 o oczekiwanych przyszłych interakcjach (F1). **49 pozycji łącznie.** Dokument źródłowy miejscami błędnie podaje 44 pozycje podstawowe.
+- [Strona projektu](docs/index.md) i [model](docs/model.md)
+- [Kwestionariusz i administracja](docs/instrument.md)
+- [Protokół trafności treściowej](docs/content-validity.md) i [plan walidacji](docs/validation.md)
+- [Źródła i wersje](docs/sources.md), [historia zmian](CHANGELOG.md)
+- Banki: [v3 (EN)](instruments/dera_hri_v3.csv), [v2.1 (PL)](instruments/dera_hri_v2_1.csv), [v2 (PL)](instruments/dera_hri_v2.csv)
 
-## Dokumentacja i dane źródłowe
+Po włączeniu GitHub Pages dokumentacja będzie dostępna pod adresem **https://matpomgit.github.io/arc-dera-hri/**.
 
-- [Model i ograniczenia](docs/model.md)
-- [Administracja, numeracja i wątpliwości dotyczące skoringu](docs/instrument.md)
-- [Plan rozwoju i walidacji](docs/validation.md) · [Protokół walidacji treściowej v3](docs/content-validity.md)
-- [Pochodzenie wersji, szkic artykułu i audyt cytowań](docs/sources.md)
-- [Bank v3 (EN)](instruments/dera_hri_v3.csv) · [v2.1 (PL)](instruments/dera_hri_v2_1.csv) · [v2 (PL)](instruments/dera_hri_v2.csv)
-- [Zasady agentów i KISS](AGENTS.md) · [Decyzje do zamknięcia](https://github.com/MatPomGit/arc-dera-hri/issues/1)
+## MkDocs
 
-**Opis kwestionariusza v3:** `opis-kwestionariusza_v3.docx` zawiera komplet 49 pozycji; zweryfikowano zgodność ich brzmienia z [bankiem CSV](instruments/dera_hri_v3.csv). Nie stanowi nowej wersji skali. Szczegóły i rozbieżności: [instrument](docs/instrument.md#pełny-formularz-źródłowy-v3).
+```bash
+python -m pip install -r requirements-docs.txt
+python -m mkdocs serve
+python -m mkdocs build --strict
+```
 
-**Manuskrypt v3:** otrzymany `kwestionariusz-dera-hri_v3.docx` jest szkicem **artykułu koncepcyjno-metodologicznego**, nie raportem z walidacji i nie zawiera pełnego banku pytań. Kanoniczny tekst pozycji pozostaje w CSV; [uwagi do manuskryptu](docs/sources.md#szkic-artykułu-koncepcyjnego-v3).
+Workflow [publikacji Pages](.github/workflows/pages.yml) buduje dokumentację przy zmianach i wdraża ją z `main`. **Pierwsze uruchomienie:** w `Settings → Pages → Build and deployment` wybierz `GitHub Actions`. Bez tego kroku samo dodanie workflow nie potwierdza działania publicznej strony.
 
-**Ważne:** v3 jest propozycją teoretyczną, nie narzędziem zwalidowanym. Wskazane w źródle średnie, brak odwracania, progi wyników i zasady wykluczeń **nie są zatwierdzonym skoringiem**. Bez wyników eksperckich i empirycznych nie należy tworzyć globalnej ani interpretowalnej skali liczbowej.
-
-Projekt dotyczy pomiaru HRI, a nie odrębnych badań interwencyjnych autonomii humanoida (ARC-SAPIENS). Kod tylko w niezbędnym zakresie: KISS, PEP 8, standard library, bez płatnych usług.
+Prace zgodnie z [KISS i zasadami agentów](AGENTS.md). Narzędzie dotyczy pomiaru HRI; odrębne eksperymenty z humanoidami należą do ARC-SAPIENS. Otwarte decyzje metodologiczne: [Issue #1](https://github.com/MatPomGit/arc-dera-hri/issues/1).
