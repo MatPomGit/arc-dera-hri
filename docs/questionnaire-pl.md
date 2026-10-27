@@ -2,6 +2,8 @@
 
 **Wariant PL: tłumaczenie robocze v3.0-PL, 27.10.2026. Nie jest to zwalidowana adaptacja językowa.**
 
+**[Pobierz polski kwestionariusz w formacie Word (DOCX)](https://github.com/MatPomGit/arc-dera-hri/raw/refs/heads/main/instruments/dera_hri_v3_pl.docx)** · [Plik Word w repozytorium](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_pl.docx).
+
 Dokument zawiera pełne polskie brzmienie 45 pozycji głównych oraz M1–M3/F1. Identyfikatory, kolejność, domeny i warunkowość odpowiadają [angielskiemu bankowi v3](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3.csv). [Plik CSV z tekstami PL](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_pl.csv) służy do dalszego opracowania. Nie łączyć wyników PL i EN bez sprawdzenia równoważności.
 
 ## Instrukcja dla osoby badanej

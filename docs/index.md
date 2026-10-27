@@ -16,7 +16,7 @@
 
 - [Model i hipotezy](model.md)
 - [Kwestionariusz, kanały i ograniczenia skoringu](instrument.md)
-- [**Polska wersja kwestionariusza v3.0-PL**](questionnaire-pl.md) (tłumaczenie robocze)
+- [**Polska wersja kwestionariusza v3.0-PL**](questionnaire-pl.md) · [dokument DOCX](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_pl.docx) (tłumaczenie robocze)
 - [Plan badania trafności treściowej](content-validity.md)
 - [Wywiady poznawcze: przewodnik i arkusz](cognitive-interviews.md)
 - [Następne etapy walidacji](validation.md)

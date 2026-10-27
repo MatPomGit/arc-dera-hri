@@ -1,5 +1,12 @@
 # Historia zmian
 
+## 2026-10-27 — Polski DOCX zapisany w repozytorium
+
+- Opublikowano gotowy do wypełniania [dokument Word](instruments/dera_hri_v3_pl.docx), wygenerowany z kanonicznego polskiego CSV.
+- Udostępniono odnośniki do DOCX w README i MkDocs; zachowano generator umożliwiający odtworzenie dokumentu.
+- Usunięto jednorazowy workflow publikacji DOCX. Status adaptacji językowej pozostaje **roboczy**.
+
+
 ## 2026-10-27 — Robocza wersja polska DERA-HRI v3.0-PL
 
 - Opracowano niezależny polski formularz wszystkich 45 pozycji rdzeniowych i M1–M3/F1, wraz z instrukcjami i skalą 1–7.

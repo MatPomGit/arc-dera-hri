@@ -14,7 +14,7 @@
 
 **Suma: 45 podstawowych + 4 dodatkowe = 49** (nie 44, jak w niektórych wstępach źródeł). M1–M3 i F1 raportować oddzielnie; F1 pyta o **przewidywany wpływ regularnych interakcji na samopoczucie**, a nie deklarowaną chęć kolejnego spotkania.
 
-**Nowy wariant językowy:** [kompletny polski formularz v3.0-PL](questionnaire-pl.md) i [bank PL (CSV)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_pl.csv). Jest to tłumaczenie robocze z tymi samymi 49 ID, a **nie potwierdzona adaptacja psychometryczna**. Wszelkie zbierane dane wymagają oznaczenia języka i identyfikatora wersji; nie scalać wersji EN i PL bez sprawdzenia równoważności.
+**Nowy wariant językowy:** [polski dokument Word (DOCX)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_pl.docx) · [kompletny formularz v3.0-PL w MkDocs](questionnaire-pl.md) i [bank PL (CSV)](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_pl.csv). Jest to tłumaczenie robocze z tymi samymi 49 ID, a **nie potwierdzona adaptacja psychometryczna**. Wszelkie zbierane dane wymagają oznaczenia języka i identyfikatora wersji; nie scalać wersji EN i PL bez sprawdzenia równoważności.
 
 ## Proponowana administracja
 
