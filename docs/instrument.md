@@ -32,6 +32,16 @@ Istotne sprzeczności:
 
 Kolumna `source_reverse=false` **odtwarza deklarację v3**, a nie potwierdza, że wyliczenie prostych średnich jest prawidłowe. Ostateczne kierunki, selekcję pozycji, braki danych i reguły wyliczeń należy zatwierdzić po ocenie treściowej i analizie empirycznej.
 
+## Nierozwiązane regresje treściowe v2.1 → v3
+
+Porównanie v3 z wcześniej dostarczoną recenzją v2 pokazuje, że część sformułowań skrytykowanych i poprawionych w kandydacie v2.1 **wróciła w angielskim banku v3**:
+
+- **EAR 11:** jednocześnie „przewidywalne” i „pod kontrolą” (dwa konstrukty w jednym pytaniu); w v2.1 rozdzielono te pojęcia.
+- **SEI 19 i 22:** ponownie „what the robot meant” (mentalizacja) i „artificiality” (ocena estetyczno-postawowa) zamiast samej czytelności sygnałów.
+- **SAP 26 i 32:** „without reason” zakłada interpretację przyczyn zachowania, a „Thanks to predictability” narzuca zależność przyczynową w treści pozycji; v2.1 proponowała bardziej neutralne odpowiedniki.
+
+Wymagana jest **ponowna ocena treściowa tych sześciu pozycji**; zachować bank źródłowy v3 bez zmian do czasu decyzji i wersjonowanej rewizji. [Przegląd decyzji](https://github.com/MatPomGit/arc-dera-hri/issues/1).
+
 ## Wersjonowanie
 
 Numeracja **v3 jest nowa**; ID v2/v2.1 nie mogą być używane wymiennie. Źródło podaje mapowanie w dodatku B; mapę tę należy niezależnie zweryfikować przed analizą międzywersyjną. Dane powinny zawierać wersję, język oraz dokładny identyfikator pozycji. **Nie scalać odpowiedzi z różnie sformułowanych wersji bez oceny równoważności.**

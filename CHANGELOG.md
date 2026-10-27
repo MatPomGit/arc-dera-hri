@@ -1,5 +1,12 @@
 # Zmiany
 
+## 2026-10-27 — Ponowna kontrola recenzji v2
+
+- Potwierdzono, że `Recenzja-DERA-HRI-2(1).odt` jest **bajtowo identyczna** z otrzymaną wcześniej `Recenzja-DERA-HRI-2.odt` (SHA-256 `023e0ec75013c8fee831e674c1afaba0976a127ab2c5c632d4b2bc1fb6f82e30`).
+- Wykryto nawrót wcześniej krytykowanych sformułowań w v3 (EAR 11; SEI 19/22; SAP 26/32). Zapisano do oceny treściowej.
+- Bez zmiany banku v3, historii instrumentów, skoringu ani modelu badawczego.
+
+
 ## 2026-10-27 — Historia recenzji DERA-HRI v1
 
 - Porównano `Recenzja-DERA-HRI.md` i `Recenzja-DERA-HRI.pdf`: jedna historyczna analiza w dwóch formatach.
