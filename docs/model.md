@@ -18,6 +18,10 @@ DERA-HRI **uzupełnia**, a nie zastępuje miary wymiarowe emocji (np. PAD/SAM). 
 
 MP-D jest w v3 elementem **głównego modelu**, a nie tylko alternatywnym modułem. Dane muszą jednak rozstrzygnąć, czy MP stanowi odrębny czynnik i czy proponowane cztery pozycje rzeczywiście pokrywają mind perception (agency/experience).
 
+## Historyczna krytyka czterech domen v1
+
+Recenzja v1 wskazywała konflikt między **dynamiczną teorią** a **jednorazowym samoopisem**, ograniczenia introspekcji reakcji prerefleksyjnych oraz nieuzasadnione domniemanie ortogonalności. Postulowała m.in. sztywną hierarchię czasową EAR → SAP → SEI → RAR, lecz bez odpowiednich danych. **Nie przyjmujemy jej jako mechanizmu potwierdzonego** ani nie nadpisujemy nią hipotez v3. [Pochodzenie oceny](sources.md#audyt-źródłowy-recenzji-v1).
+
 ## Ograniczenia i kontrhipotezy
 
 - SEI i SAP mogą być empirycznie nierozdzielne lub silnie powiązane.

@@ -1,5 +1,13 @@
 # Zmiany
 
+## 2026-10-27 — Historia recenzji DERA-HRI v1
+
+- Porównano `Recenzja-DERA-HRI.md` i `Recenzja-DERA-HRI.pdf`: jedna historyczna analiza w dwóch formatach.
+- Zintegrowano trwałe uwagi dotyczące introspekcji, dynamiki, niezależności czynników, moderatorów i planu walidacji.
+- Oznaczono deklarację 1030 publikacji i czasowe progi systemów jako **niezweryfikowane**; nie przyjęto historycznych reguł wbrew v3.
+- Bez zmian banków pozycji, modelu pięciodomenowego v3, skoringu i struktury repozytorium.
+
+
 ## 2026-10-27 — Integracja źródła DERA-HRI v3.0
 
 - Dodano angielski bank **45 pozycji rdzenia + 4 modułów** (`instruments/dera_hri_v3.csv`), zachowując oryginalne brzmienie i nową numerację.

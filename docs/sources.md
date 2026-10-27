@@ -5,6 +5,7 @@
 | `Własny kwesionariusz.odt` | wcześniejszy, hierarchiczny E-HRAISE | historyczna koncepcja |
 | `DERA-HRI-1.pdf` (07.02.2026) | 4 domeny, 32 pozycje | historyczna v1 |
 | `DERA-HRI-1_analysis.md` | wtórna analiza v1 | materiał pomocniczy |
+| `Recenzja-DERA-HRI.md` / `Recenzja-DERA-HRI.pdf` (raport z 07.02.2026) | krytyczna ocena **v1** (32 pozycje) i propozycje rewizji/walidacji | **jedna historyczna analiza w dwóch formatach**, nie nowa recenzja v3 |
 | `Projekt-DERA-HRI-2.odt` | 4 domeny, 48 pozycji, metody | historyczna v2 |
 | `Recenzja-DERA-HRI-2.odt` | językowo zmienione 48 pozycji; MP jako wariant | historyczna v2.1 |
 | **`DERA-HRI-3.md`** (wersja autorska 3.0, data podana: luty 2026) | **5 domen, pełny bank EN, moduły M1–M3/F1, plan 7-etapowy** | **aktualna propozycja; bez walidacji** |
@@ -22,6 +23,14 @@ Wersje źródłowe są **propozycjami projektowymi**, a nie wynikami badań. Now
 7. Zakres MP-D w czterech pozycjach dotyczy głównie przypisywanej sprawczości/intencjonalności; pełna definicja agency + experience wymaga weryfikacji treściowej.
 
 Dokument źródłowy zawiera bibliografię i mapę pozycji v2→v3, lecz ich poprawność (metadane cytowań, zgodność wordingów i wersji) wymaga niezależnego przeglądu przed wykorzystaniem w manuskrypcie.
+
+## Audyt źródłowy recenzji v1
+
+- Raport dotyczy **czterech systemów v1**, a nie pięciodomenowego banku v3. Wskazuje problemy: retrospektywny pomiar procesów dynamicznych, samoopis reakcji prerefleksyjnych, nieudowodniona rozdzielność czynników, kontrola dominacji i efekty halo/antropomorfizacji.
+- Rekomendacje historyczne (rozszerzenie do 48 pozycji, negatywna regulacja, kanały ekspresji, siedem faz walidacji) wpłynęły na rozwój v2–v3. Nie przesądzają o przywróceniu modelu czteroczynnikowego ani odwróconych pozycji, które v3 kwestionuje.
+- W raporcie deklaruje się przegląd **1030 publikacji**, ale dołączona bibliografia zawiera kilkanaście skrótowych opisów bez kompletnej identyfikacji; **nie można niezależnie potwierdzić liczebności korpusu ani metody systematycznego przeglądu**.
+- Sugerowana hierarchia czasowa (EAR <200 ms, SAP 100–500 ms, SEI 500–2000 ms) jest **hipotezą historyczną bez przedstawionego testu w HRI**; nie stanowi ustalonej kolejności neurofizjologicznej. Wymóg ukończenia pełnych siedmiu faz przed *jakimkolwiek* badaniem nie obejmuje pilotaży prowadzonych właśnie w celu rozwoju i walidacji skali.
+- Pliki Markdown i PDF mają odpowiadające sobie sekcje i zasadniczo tę samą treść; nie liczyć ich jako dwóch niezależnych ocen. Wnioski raportu traktować jako ocenę teoretyczno-metodologiczną, nie dodatkowe dane empiryczne.
 
 ## Reguła kolejnej aktualizacji
 

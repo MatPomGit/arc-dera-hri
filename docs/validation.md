@@ -22,6 +22,10 @@
 
 Siedmioetapowy plan źródłowy przewiduje także wielokulturową walidację, analizy sieciowe, LPA, testy podłużne i ewentualną wersję skróconą. **Nie są konieczne do uruchomienia minimalnego pilotażu i nie stanowią obietnicy realizacji.** Wielkość próby wyznaczyć z rozważanych modeli, precyzji oszacowania, dostępności warunków i braków danych, a nie mechanicznie ze źródłowego `n=300–500` czy `2000–3000`.
 
+## Wnioski z historycznej recenzji v1
+
+Z krytycznej analizy `Recenzja-DERA-HRI.md` (również w PDF) pozostają aktualne wymagania: mierzyć trafność względem PAD/SAM, kontrolować efekt halo, społeczną pożądaność, doświadczenie z robotami, cechy empatii, różnice środowiska/trybu autonomii oraz oddzielać subiektywne doznania od fizjologii. Ewentualna weryfikacja porządku EAR/SAP/SEI/RAR i opóźnień <200 / 100–500 / 500–2000 ms wymaga danych czasowych i protokołu, nie ankiety po jednej interakcji. Raport nie zawiera danych walidacyjnych. Przewidywany harmonogram 3–4 lata i wielkości prób są orientacyjne, **nie stanowią obowiązkowych bramek**; do pilotażu należy dopuścić wersję rozwojową z właściwym oznaczeniem i zgodami. [Status źródeł](sources.md#audyt-źródłowy-recenzji-v1).
+
 ## Reguły interpretacji
 
 - **Hipotezy**: EAR↔pobudzenie, SEI↔czytelność sygnałów, SAP↔przewidywalność/kontrola, MP↔antropomorfizacja, RAR↔regulacja emocji; związek SEI–SAP–RAR oraz rola MP jako moderatora wymagają osobnych projektów do wnioskowania przyczynowego.
