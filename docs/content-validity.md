@@ -18,6 +18,8 @@ Każdy ekspert ocenia **każdą właściwą pozycję** pod kątem:
 - trafności względem domeny, jasności i prostoty: trzy odrębne skale **1–4** (CVI lub analogiczne wskaźniki jakości);
 - dopasowania do konstruktu, brakujących treści, redundancji, warunków kanałowych i poprawek językowych (komentarze).
 
+Nie korzystać z błędnej definicji z `opis-kwestionariusza_v3.docx`, gdzie `ne` uzyskano z ocen trafności 3–4. **CVR = ocena niezbędności**, I-CVI = odsetek ocen 3–4 trafności/jasności/prostoty. Proponowana w tym źródle `Cohen's κ` jest miarą dla dwóch oceniających; przy większej liczbie ekspertów określić odpowiednią miarę zgodności wieloosobowej i nie stosować niezweryfikowanych progów CVR (np. `0,62 przy N=5`) jako automatycznych bramek.
+
 **Obliczenia:** `CVR = (ne - N/2)/(N/2)`; `I-CVI = liczba ocen 3–4 / N`, osobno dla kryterium; `S-CVI/Ave = średnia I-CVI`; opcjonalnie `S-CVI/UA = udział pozycji z pełną zgodą`. Raportować dokładne `N`, `ne`, zasady braków i niepewność. Źródło podaje dla CVR przykładowe kryteria **0,56 przy N=12** i **0,49 przy N=15**, oraz dla I-CVI propozycję **≥0,78** i S-CVI/Ave **≥0,90**. Przed badaniem wskazać wybraną wersję tablic, metodę interpretacji i sposób postępowania z oceną jasności/prostoty. **Nie odrzucać pozycji automatycznie** na podstawie jednego wskaźnika.
 
 ## Etap 2. Rewizja pozycji

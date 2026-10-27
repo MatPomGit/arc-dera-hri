@@ -26,6 +26,8 @@ Ponadto 3 pozycje o strategiach regulacji (M1–M3) i 1 o oczekiwanych przyszły
 - [Bank v3 (EN)](instruments/dera_hri_v3.csv) · [v2.1 (PL)](instruments/dera_hri_v2_1.csv) · [v2 (PL)](instruments/dera_hri_v2.csv)
 - [Zasady agentów i KISS](AGENTS.md) · [Decyzje do zamknięcia](https://github.com/MatPomGit/arc-dera-hri/issues/1)
 
+**Opis kwestionariusza v3:** `opis-kwestionariusza_v3.docx` zawiera komplet 49 pozycji; zweryfikowano zgodność ich brzmienia z [bankiem CSV](instruments/dera_hri_v3.csv). Nie stanowi nowej wersji skali. Szczegóły i rozbieżności: [instrument](docs/instrument.md#pełny-formularz-źródłowy-v3).
+
 **Manuskrypt v3:** otrzymany `kwestionariusz-dera-hri_v3.docx` jest szkicem **artykułu koncepcyjno-metodologicznego**, nie raportem z walidacji i nie zawiera pełnego banku pytań. Kanoniczny tekst pozycji pozostaje w CSV; [uwagi do manuskryptu](docs/sources.md#szkic-artykułu-koncepcyjnego-v3).
 
 **Ważne:** v3 jest propozycją teoretyczną, nie narzędziem zwalidowanym. Wskazane w źródle średnie, brak odwracania, progi wyników i zasady wykluczeń **nie są zatwierdzonym skoringiem**. Bez wyników eksperckich i empirycznych nie należy tworzyć globalnej ani interpretowalnej skali liczbowej.

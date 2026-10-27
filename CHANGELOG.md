@@ -1,5 +1,13 @@
 # Zmiany
 
+## 2026-10-27 — Pełny opis instrumentu v3 (DOCX)
+
+- Zweryfikowano **49/49 identycznych stwierdzeń** w `opis-kwestionariusza_v3.docx` i banku `dera_hri_v3.csv`; bez tworzenia nowej wersji.
+- Uzupełniono administrację i pełną siedmiopunktową skalę odpowiedzi, warunki SEI oraz zakres F1.
+- Zidentyfikowano historyczne numery pozycji, błędną definicję CVR i `Cohen's κ` dla wieloosobowego panelu oraz niezatwierdzone interpretacje średnich i profili.
+- Zaktualizowano dokumentację bez ingerencji w brzmienie pozycji i bez dodawania oprogramowania.
+
+
 ## 2026-10-27 — Projekt badania trafności treściowej v3
 
 - Włączono `dera-hri-protocol-v3.docx` jako **projekt protokołu 1.0**, bez potwierdzenia realizacji badań.

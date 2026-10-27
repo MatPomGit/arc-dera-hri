@@ -11,6 +11,7 @@
 | **`DERA-HRI-3.md`** (wersja autorska 3.0, data podana: luty 2026) | **5 domen, pełny bank EN, moduły M1–M3/F1, plan 7-etapowy** | **aktualna propozycja; bez walidacji** |
 | `kwestionariusz-dera-hri_v3.docx` | angielski **szkic artykułu koncepcyjno-metodologicznego**, 45 pozycji opisanych przez zakresy ID, 13 pozycji bibliografii i propozycje progów walidacyjnych | **materiał do rewizji redakcyjnej**, nie nowa wersja instrumentu ani wynik empiryczny |
 | `dera-hri-protocol-v3.docx` (protokół 1.0, luty 2026) | projekt oceny treści: panel 12–15 ekspertów, CVR/CVI, 15–20 wywiadów poznawczych, dwie rundy | **źródło roboczego protokołu badań**, nie uzyskana zgoda ani wyniki |
+| `opis-kwestionariusza_v3.docx` (v3.0, luty 2026) | **pełny formularz EN** (45 pozycji głównych + M1–M3/F1), instrukcje podskal, administracja, skoring kandydacki i plan walidacji | **zgodny tekst 49 pozycji z CSV; dokument opisowy, bez nowych wyników** |
 
 Wersje źródłowe są **propozycjami projektowymi**, a nie wynikami badań. Nowy bank zapisano w [`instruments/dera_hri_v3.csv`](../instruments/dera_hri_v3.csv); historyczne v2 i v2.1 pozostają nienaruszone. Zmiany treści i języka oraz nowa numeracja nie oznaczają równoważności pomiarowej.
 
@@ -58,6 +59,20 @@ Nie scalać tego manuskryptu z przyszłym **artykułem empirycznym o walidacji s
 - Proponowane stawki **200–300 USD za ocenę ekspercką i 30–50 USD za wywiad** nie są przyjęte; projekt obowiązuje zasada bezkosztowa. **Nie proponować współautorstwa jako ekwiwalentu wynagrodzenia**: wymaga niezależnego spełnienia kryteriów wkładu, zatwierdzenia i odpowiedzialności ([ICMJE](https://icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html)).
 - CVR i CVI mają różne cele (niezbędność vs trafność/ocena zrozumiałości); progi `I-CVI 0.78`, `S-CVI/Ave 0.90` i tablice CVR zależne od N to **propozycje wymagające metodologicznego uzasadnienia**, nie automatyczny nakaz usuwania elementów unikalnych dla konstruktu.
 - Brak dostarczonych ocen ekspertów, wywiadów, protokołu zgody/zwolnienia od komisji etycznej i polityki lokalnego przechowywania nagrań. Wszystkie wyniki tabel w aneksach są **przykładami lub szablonami**.
+
+## Pełny opis kwestionariusza v3 (DOCX)
+
+Z `opis-kwestionariusza_v3.docx` porównano **wszystkie 49 dosłownych brzmień stwierdzeń** z kanonicznym CSV: zgodność 49/49. Unikatową wartością dokumentu są kompletne instrukcje dla uczestników i podskal, wskazówki dotyczące kanałów oraz propozycje analizy podwymiarów; włączono je zwięźle do [specyfikacji instrumentu](instrument.md#pełny-formularz-źródłowy-v3).
+
+**Nie przenosić do obowiązującej metodyki następujących niespójności:**
+- W części wstępnej nadal „**44** core items”, choć sekcja 6 i tabela zawierają **45**. Sekcje teoretyczne korzystają z innych numeracji (np. MP 41–44, SEI 25–36, SAP 13–24), sprzecznych z aktualnym bankiem MP **34–37**, SEI **12–23**, SAP **24–33**.
+- Tabela ewolucji powtarza **12 pozycji odwracanych w v1 i v2**, sprzecznie z dokumentami historycznymi (odpowiednio 10 i 9 oznaczeń). Stwierdzenie o wcześniej „validated item content” nie ma udokumentowanej podstawy empirycznej.
+- Sekcja 9.2.1 **błędnie utożsamia CVR Lawshego z liczbą ocen trafności 3–4**; potrzebne oddzielne pytanie o niezbędność. Dla wieloosobowego panelu `Cohen's κ` nie jest właściwą ogólną miarą zgodności.
+- Polecenie wypełnienia wszystkich pytań jest niespójne z celowym pomijaniem niedostępnych kanałów SEI 12–15 (i problemem SEI 16); automatyczne uśrednianie warunkowych pozycji nie gwarantuje równoważności.
+- Propozycja **braku odwróceń** i interpretacji prostych średnich ignoruje odmienne kierunki np. RAR 39–41 vs 42–44, SAP 28/30, SEI 19/22. Wskaźniki progowe, przykładowe profile i sugestie kliniczne nie zostały zwalidowane.
+- **F1** pyta o przewidywany wpływ regularnych interakcji na samopoczucie, nie o intencję kolejnego spotkania mimo etykiety `Future Interaction Intentions`.
+
+Numeracja i sformułowania w opisach/załącznikach mają niższy priorytet niż zweryfikowana **pełna lista pozycji z sekcji 6**. Propozycje pozostają historycznymi założeniami do badania, nie wynikami.
 
 ## Reguła kolejnej aktualizacji
 

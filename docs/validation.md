@@ -34,6 +34,10 @@ Szkic artykułu `kwestionariusz-dera-hri_v3.docx` podaje jako cele: α/ω ≥0,8
 
 Artykuł koncepcyjny może prezentować model, bank i plan walidacji, ale nie wolno opisywać ich w abstrakcie jako uzyskanej trafności. Wyniki własnej walidacji wymagają odrębnych danych, analiz, protokołu i sekcji Results. Zewnętrzna podstawa dla luk w psychometrii HRI: Vagnetti i in., *J Med Internet Res* **2024;26:e55597**, [DOI](https://doi.org/10.2196/55597).
 
+## Niespójność procedury CVR w pełnym opisie v3
+
+`opis-kwestionariusza_v3.docx` w sekcji 9.2.1 definiuje `ne` na potrzeby CVR jako liczbę ocen **relevance 3 lub 4**. To nie jest ocena **essentiality** wymagana do klasycznego CVR Lawshego; wartości tak wyliczone należy traktować jako inną miarę, nie jako CVR. Panel ma oceniać oba pytania oddzielnie według [protokołu trafności treściowej](content-validity.md). Wskazanie `Cohen's κ` dla grupy ekspertów także wymaga zmiany metody zgodności, jeśli oceniających jest więcej niż dwóch. Wartości krytyczne zależne od wielkości panelu wymagają sprawdzenia przed rekrutacją.
+
 ## Reguły interpretacji
 
 - **Hipotezy**: EAR↔pobudzenie, SEI↔czytelność sygnałów, SAP↔przewidywalność/kontrola, MP↔antropomorfizacja, RAR↔regulacja emocji; związek SEI–SAP–RAR oraz rola MP jako moderatora wymagają osobnych projektów do wnioskowania przyczynowego.
