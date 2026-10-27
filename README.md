@@ -2,40 +2,30 @@
 
 **Dynamic Embodied Relational Affect in Human–Robot Interaction**
 
-Projekt opracowania i walidacji samoopisowego narzędzia do oceny doświadczeń afektywnych podczas **konkretnej interakcji człowieka z robotem**. **Status: projekt rozwojowy; brak walidacji i danych empirycznych.**
+Projekt opracowania i walidacji kwestionariusza samoopisowego doświadczeń afektywnych po **konkretnej interakcji z robotem**. **Status: wersja rozwojowa, bez wyników walidacji empirycznej.**
 
-## Model
+## Aktualny model: DERA-HRI v3.0 (propozycja)
 
-Cztery postulowane, współwystępujące domeny:
+| Domena | Przedmiot pomiaru | Pozycje |
+| --- | --- | ---: |
+| EAR-D | Subiektywnie zauważane reakcje cielesne | 11 |
+| SEI-D | Interpretacja sygnałów i ekspresji robota | 12 |
+| SAP-D | Predykcja zachowania i uczenie się przewidywalności | 10 |
+| MP-D | Przypisywanie robotowi stanów umysłowych i intencji | 4 |
+| RAR-D | Subiektywna regulacja afektywna w relacji z robotem | 8 |
+| **Razem** | **Pięć hipotetycznych domen** | **45** |
 
-| System | Konstrukty kandydackie |
-| --- | --- |
-| EAR-D | Zauważane reakcje cielesne i odczucia afektywne |
-| SAP-D | Przewidywanie i poczucie kontroli zachowania robota |
-| SEI-D | Interpretacja sygnałów ruchowych, głosowych i kontekstowych |
-| RAR-D | Subiektywnie odczuwana regulacja emocji podczas interakcji |
+Ponadto 3 pozycje o strategiach regulacji (M1–M3) i 1 o oczekiwanych przyszłych interakcjach (F1). **49 pozycji łącznie.** Dokument źródłowy miejscami błędnie podaje 44 pozycje podstawowe.
 
-Recenzja dopuszcza **alternatywny model pięcioczynnikowy** z MP-D (przypisywanie umysłu/mentalizacja), ale nie potwierdza jego trafności.
+## Dokumentacja i dane źródłowe
 
-## Instrument
+- [Model i ograniczenia](docs/model.md)
+- [Administracja, numeracja i wątpliwości dotyczące skoringu](docs/instrument.md)
+- [Plan rozwoju i walidacji](docs/validation.md)
+- [Pochodzenie wersji i rozbieżności](docs/sources.md)
+- [Bank v3 (EN)](instruments/dera_hri_v3.csv) · [v2.1 (PL)](instruments/dera_hri_v2_1.csv) · [v2 (PL)](instruments/dera_hri_v2.csv)
+- [Zasady agentów i KISS](AGENTS.md) · [Decyzje do zamknięcia](https://github.com/MatPomGit/arc-dera-hri/issues/1)
 
-- **[v2.1, propozycja po recenzji](instruments/dera_hri_v2_1.csv):** 48 pozycji (12 na domenę), odpowiedzi 1–7.
-- **[v2, wersja historyczna](instruments/dera_hri_v2.csv):** 48 pozycji, zachowana do porównania i śledzenia zmian.
-- Skala po pojedynczej, świeżo zakończonej interakcji; brak uzasadnionego wyniku globalnego.
-- **Klucz odwrócenia i skoring v2.1 są propozycją źródłową, nie zatwierdzonym algorytmem.** Szczególnie wymagają rewizji EAR-D i pozycje zależne od kanału komunikacji.
+**Ważne:** v3 jest propozycją teoretyczną, nie narzędziem zwalidowanym. Wskazane w źródle średnie, brak odwracania, progi wyników i zasady wykluczeń **nie są zatwierdzonym skoringiem**. Bez wyników eksperckich i empirycznych nie należy tworzyć globalnej ani interpretowalnej skali liczbowej.
 
-## Dokumentacja
-
-- [Model i wariant MP-D](docs/model.md)
-- [Instrukcja i wersje kwestionariusza](docs/instrument.md)
-- [Plan walidacji i hipotezy](docs/validation.md)
-- [Źródła i historia zmian](docs/sources.md)
-- [Zasady minimalnego kodu i aktualizacji](AGENTS.md)
-
-## Granice projektu
-
-ARC-DERA-HRI odpowiada za rozwój **instrumentu psychometrycznego**; eksperymentalne badania skutków określonych zachowań humanoida są osobnym nurtem ARC-SAPIENS. Nie utożsamiać samoopisu z pomiarem fizjologicznym ani przekrojowych korelacji z mechanizmami przyczynowymi.
-
-Oprogramowanie tylko wtedy, gdy potrzebne: Python, standard library, PEP 8, KISS, bez duplikowania narzędzi i dokumentacji oraz bez płatnych usług.
-
-**Następna bramka:** ocena trafności treściowej i wywiady poznawcze, następnie decyzja o rewizjach pozycji i zamrożeniu protokołu pilotażowego.
+Projekt dotyczy pomiaru HRI, a nie odrębnych badań interwencyjnych autonomii humanoida (ARC-SAPIENS). Kod tylko w niezbędnym zakresie: KISS, PEP 8, standard library, bez płatnych usług.

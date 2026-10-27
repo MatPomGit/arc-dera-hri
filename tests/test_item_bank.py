@@ -1,4 +1,4 @@
-"""Kontrola integralności roboczych banków DERA-HRI bez zależności."""
+"""Kontrola struktury źródłowych banków DERA-HRI (bez walidacji psychometrycznej)."""
 
 import csv
 import unittest
@@ -13,30 +13,46 @@ VERSIONS = {
 
 
 class ItemBankTest(unittest.TestCase):
-    def test_source_structure(self):
-        for version, (filename, source_reverse) in VERSIONS.items():
+    def test_historical_banks(self):
+        for version, (filename, reverses) in VERSIONS.items():
             with self.subTest(version=version):
-                with (ROOT / filename).open(encoding="utf-8", newline="") as file:
-                    rows = list(csv.DictReader(file))
-
-                self.assertEqual(len(rows), 48)
-                self.assertEqual([int(row["id"]) for row in rows], list(range(1, 49)))
+                with (ROOT / filename).open(encoding="utf-8", newline="") as handle:
+                    items = list(csv.DictReader(handle))
+                self.assertEqual([int(row["id"]) for row in items], list(range(1, 49)))
                 self.assertEqual(
-                    dict(Counter(row["scale"] for row in rows)),
+                    dict(Counter(row["scale"] for row in items)),
                     {"EAR-D": 12, "SAP-D": 12, "SEI-D": 12, "RAR-D": 12},
                 )
                 self.assertEqual(
-                    {int(row["id"]) for row in rows if row["reverse"] == "true"},
-                    source_reverse,
+                    {int(row["id"]) for row in items if row["reverse"] == "true"},
+                    reverses,
                 )
-                self.assertTrue(
-                    all(
-                        row["text_pl"].strip()
-                        and row["domain"].strip()
-                        and row["reverse"] in {"true", "false"}
-                        for row in rows
-                    )
-                )
+                self.assertTrue(all(row["text_pl"].strip() for row in items))
+
+    def test_v3_bank(self):
+        with (ROOT / "dera_hri_v3.csv").open(encoding="utf-8", newline="") as handle:
+            items = list(csv.DictReader(handle))
+
+        core = [row for row in items if row["item_id"].isdecimal()]
+        extra = [row for row in items if not row["item_id"].isdecimal()]
+        self.assertEqual([int(row["item_id"]) for row in core], list(range(1, 46)))
+        self.assertEqual(
+            dict(Counter(row["scale"] for row in core)),
+            {"EAR-D": 11, "SEI-D": 12, "SAP-D": 10, "MP-D": 4, "RAR-D": 8},
+        )
+        self.assertEqual([row["item_id"] for row in extra], ["M1", "M2", "M3", "F1"])
+        self.assertEqual(
+            {row["item_id"]: row["condition"] for row in core if row["condition"] != "always"},
+            {
+                "12": "movement",
+                "13": "voice",
+                "14": "gestures",
+                "15": "facial_expressions",
+                "16": "multichannel_review",
+            },
+        )
+        self.assertTrue(all(row["source_reverse"] == "false" for row in items))
+        self.assertTrue(all(row["text_en"].strip() for row in items))
 
 
 if __name__ == "__main__":

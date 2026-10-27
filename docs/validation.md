@@ -1,33 +1,32 @@
-# Plan walidacji DERA-HRI
+# Plan badań walidacyjnych DERA-HRI
 
-**Status:** plan kandydacki, bez danych empirycznych. Najbliższy cel: sprawdzić trafność treściową i konstruktu banku **v2.1**, zanim powstanie finalny skoring.
+**Status:** plan kandydujący, bez wyników empirycznych; punktem wyjścia jest bank [v3.0](../instruments/dera_hri_v3.csv). Dokument źródłowy proponuje siedem etapów i orientacyjnie 42 miesiące, lecz to **niezatwierdzony harmonogram**, podobnie jak szacunkowe N.
 
-## Etapy
+## Bramka P0: ustalenie treści i modelu
 
-1. **Treść:** mapa pozycja–konstrukt, panel ekspertów, CVI/CVR z uzasadnionymi kryteriami i wywiady poznawcze. Sprawdzić rozumienie EAR-D, pozycji odwróconych, kanałów SEI oraz mentalizacji SAP. W razie zmian utworzyć kolejną wersję banku.
-2. **Pilotaż proceduralny:** jednoznaczny scenariusz HRI, moment wypełnienia, aktywne kanały, `nie dotyczy`, braki odpowiedzi, czas realizacji i obciążenie badanego. Nie utożsamiać „wypełnialności” z trafnością.
-3. **Struktura:** EFA/ESEM ze swobodą teoretycznie uzasadnionych ładunków krzyżowych, a następnie niezależna CFA/porównanie modeli. Sprawdzić cztery domeny, możliwość połączenia SAP z SEI, czynnik pozycji odwróconych oraz pięcioczynnikowy wariant MP-D **tylko przy odpowiednich danych i wersji kwestionariusza**. Nie preferować automatycznie modelu pięcioczynnikowego.
-4. **Rzetelność i trafność:** omega, ewentualnie alfa, przedziały niepewności; zbieżność/różnicowanie z pobudzeniem i walencją (SAM/PAD), postawami (NARS), antropomorfizacją, zaufaniem i akceptacją. Ocena wartości przyrostowej względem postaw wobec AI.
-5. **Uogólnianie:** test–retest tylko przy porównywalnym zadaniu i definicji mierzonego stanu; niezmienniczość między typami robotów, kanałami i populacjami po uzasadnieniu liczebności. Opcjonalnie powtarzane pomiary/fizjologia do rzeczywistej analizy dynamiki.
+1. Panel specjalistów psychometrii/HRI/psychologii emocji: pokrycie domen, jednoznaczność, rozumienie sformułowań, ocena przydziału pozycji. CVI/CVR wyłącznie z kryteriami właściwymi dla liczby ekspertów; dla wielu oceniających nie stosować automatycznie *Cohen's κ*.
+2. Wywiady poznawcze w **języku administracji**: SEI zależne od kanałów, MP i antropomorfizacja, pary o przeciwnej walencji, kontrola i koszt wypełnienia. Po zmianie pozycji zachować nową wersję.
+3. Ustalić populację, HRI scenariusz, warunki fizycznego bezpieczeństwa/etyki, procedurę zgód, kompletny bank oraz metadane sesji.
+4. Rozstrzygnąć pozycje o sprzecznych kierunkach, reguły strukturalnego `nie dotyczy`, nadmiarowość i zasady wyliczeń. Śledzenie: [Issue #1](https://github.com/MatPomGit/arc-dera-hri/issues/1).
 
-Przed badaniem ludzi zamrozić populację, scenariusz, zasady etyczne i bezpieczeństwa, wersję ankiety, model braków, sposób wyznaczania liczebności i analizy potwierdzające. Raportowanie według właściwych elementów AERA/APA/NCME i COSMIN po sprawdzeniu zastosowania tych standardów.
+## Kolejne etapy (warunkowe)
 
-## Hipotezy do rozważenia (z recenzji, **nieprerejestrowane**)
+| Etap | Pytanie | Podstawowy dowód |
+| --- | --- | --- |
+| Pilotaż | Czy pozycje i procedura działają? | rozkłady, braki, zrozumiałość, czas, artefakty kanałów |
+| Struktura | Ile czynników rzeczywiście występuje? | EFA/ESEM; później niezależna CFA, porównanie alternatyw |
+| Rzetelność | Z jaką precyzją wyniki mierzą postulowane domeny? | ω/α z niepewnością, właściwy model pomiaru |
+| Trafność zewnętrzna | Czy wyniki wiążą się z odpowiednimi konstruktami? | SAM/PAD, antropomorfizacja, zaufanie, akceptacja, zachowanie |
+| Kontekst i czas | Czy wyniki są porównywalne między zadaniami i robotami? | ocena inwariancji, powtórzenia, opcjonalnie ESM/EDA/HRV |
+| Adaptacje i rozszerzenia | Czy narzędzie działa w innych językach/populacjach? | procedura adaptacji, inwariancja i niezależna ocena |
 
-Dla **alternatywnego modelu pięcioczynnikowego**:
-- **H1:** SEI dodatnio wiąże się z SAP.
-- **H2:** SAP dodatnio wiąże się z RAR.
-- **H3:** SAP statystycznie pośredniczy w związku SEI–RAR.
-- **H4:** MP dodatnio wiąże się z SEI i SAP.
-- **H5:** MP moderuje związek SEI–SAP (silniejszy przy większym MP).
-- **H6:** EAR ma ujemny lub zerowy związek z RAR po uwzględnieniu SAP/SEI. **Wymaga jednoznacznego, falsyfikowalnego kierunku przed analizą potwierdzającą.**
-- **H7:** EAR ma słaby ujemny związek z SAP.
-- **H8 (opcjonalna):** SAP osłabia ujemny związek EAR–RAR.
+Siedmioetapowy plan źródłowy przewiduje także wielokulturową walidację, analizy sieciowe, LPA, testy podłużne i ewentualną wersję skróconą. **Nie są konieczne do uruchomienia minimalnego pilotażu i nie stanowią obietnicy realizacji.** Wielkość próby wyznaczyć z rozważanych modeli, precyzji oszacowania, dostępności warunków i braków danych, a nie mechanicznie ze źródłowego `n=300–500` czy `2000–3000`.
 
-Przewidziane w recenzji korelacje (np. SAP–SEI `r≈0,50–0,70`) to **spekulacyjne oczekiwania**, a nie wyniki ani zweryfikowane założenia mocy. Nie przeliczać ich automatycznie na N. Strzałki w modelu SEM oznaczają hipotezy kierunkowe, a przekrojowa analiza nie identyfikuje wpływu przyczynowego.
+## Reguły interpretacji
 
-## Zasady analityczne
-
-Pozycje 1–7 są porządkowe: rozważyć estymator właściwy dla danych kategorialnych (np. WLSMV), alternatywnie MLR po ocenie założeń. Sposób obsługi braków zależy od estymatora; FIML nie jest automatyczną procedurą dla wszystkich wariantów WLSMV. **Strukturalna niedostępność kanału** w SEI nie jest losowo brakującą obserwacją.
-
-Przy założeniach spełnionych rozważyć modele mediacji/moderacji jako analizy wyjaśniające; wymagają jawnych ograniczeń i osobnego planu dla interakcji latentnych. Analiza sieciowa i LPA nie zastępują weryfikacji pomiarowej. Raportować wszystkie porównane modele, ładunki, niepewność i odstępstwa od protokołu.
+- **Hipotezy**: EAR↔pobudzenie, SEI↔czytelność sygnałów, SAP↔przewidywalność/kontrola, MP↔antropomorfizacja, RAR↔regulacja emocji; związek SEI–SAP–RAR oraz rola MP jako moderatora wymagają osobnych projektów do wnioskowania przyczynowego.
+- Nie przyjmować „pięciu czynników” jako oczekiwanego wyniku; porównywać struktury prostsze i potencjalne ładunki krzyżowe. Nie usuwać pozycji wyłącznie po to, aby poprawić α czy dopasowanie modelu.
+- Nie używać arbitralnych progów CVR, CFI/RMSEA, α, 20% braków, czasu 3 minut ani skutków o `d≥0,5` jako automatycznych bramek bez uzasadnienia metodycznego.
+- W pozycjach porządkowych 1–7 dobierać estymację do rozkładów i modelu. Wyraźnie oddzielać brak kanału od braku odpowiedzi; nie stosować prostego FIML do wszystkich schematów.
+- Raportować wyniki ujemne i zerowe, ograniczenia, z góry zaplanowane analizy i eksplorację; test–retest interpretować względem cechy/stanu po konkretnym doświadczeniu.
+- Korzystać z odpowiednich standardów AERA/APA/NCME i COSMIN po weryfikacji zakresu; źródłowe pozycje bibliograficzne wymagają niezależnej kontroli przed publikacją.

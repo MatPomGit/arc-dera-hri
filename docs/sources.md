@@ -1,26 +1,28 @@
 # Źródła i wersje
 
-| Dokument otrzymany od autora | Znaczenie | Status |
+| Dokument autora | Co wnosi | Status |
 | --- | --- | --- |
-| `Własny kwesionariusz.odt` | wczesny model hierarchiczny E-HRAISE | historyczna koncepcja |
-| `DERA-HRI-1.pdf` (07.02.2026) | cztery systemy DERA-HRI, 32 pozycje | historyczna v1 |
-| `DERA-HRI-1_analysis.md` | streszczenie v1 | pomocnicze, nie dowód empiryczny |
-| `Projekt-DERA-HRI-2.odt` | 48 pozycji, klucz i plan walidacji | historyczna propozycja v2 |
-| **`Recenzja-DERA-HRI-2.odt`** | krytyka v2, poprawki wszystkich 48 pozycji, klucz, model MP-D, hipotezy SEM | **aktualna propozycja v2.1; nie jest raportem z badań** |
+| `Własny kwesionariusz.odt` | wcześniejszy, hierarchiczny E-HRAISE | historyczna koncepcja |
+| `DERA-HRI-1.pdf` (07.02.2026) | 4 domeny, 32 pozycje | historyczna v1 |
+| `DERA-HRI-1_analysis.md` | wtórna analiza v1 | materiał pomocniczy |
+| `Projekt-DERA-HRI-2.odt` | 4 domeny, 48 pozycji, metody | historyczna v2 |
+| `Recenzja-DERA-HRI-2.odt` | językowo zmienione 48 pozycji; MP jako wariant | historyczna v2.1 |
+| **`DERA-HRI-3.md`** (wersja autorska 3.0, data podana: luty 2026) | **5 domen, pełny bank EN, moduły M1–M3/F1, plan 7-etapowy** | **aktualna propozycja; bez walidacji** |
 
-Banki `instruments/dera_hri_v2.csv` i `instruments/dera_hri_v2_1.csv` utrzymują zgodne ID 1–48, ale **odmienne brzmienia**. Nie wolno scalać odpowiedzi z różnych wersji bez oceny równoważności. Źródła udostępniono w rozmowie; repozytorium zachowuje uporządkowaną reprezentację, nie surowe pliki ODT.
+Wersje źródłowe są **propozycjami projektowymi**, a nie wynikami badań. Nowy bank zapisano w [`instruments/dera_hri_v3.csv`](../instruments/dera_hri_v3.csv); historyczne v2 i v2.1 pozostają nienaruszone. Zmiany treści i języka oraz nowa numeracja nie oznaczają równoważności pomiarowej.
 
-## Co zmienia v2.1
+## Ustalenia krytyczne przy integracji v3
 
-- EAR-D: opisuje zauważane reakcje, nie nieświadomą fizjologię; pozycja 11 o przewidywalności reakcji.
-- SAP-D: usuwa część jawnie mentalistycznych wyrażeń, ale **19–22 nadal** mogą mierzyć ocenę sprawczości; wariant MP-D pozostaje alternatywą.
-- SEI-D: pozycje 26–28 są warunkowe względem kanałów; oddzielić `nie dotyczy` od braków odpowiedzi.
-- RAR-D: pozycje 37, 44–46 i 48 są proponowane **poza rdzeniem wyniku regulacji**.
-- Źródłowy klucz v2.1 dodaje odwrócenie **6 i 32** względem v2; pozycja 6 ma nierozstrzygniętą interpretację, dlatego **nie zatwierdzono skoringu**.
-- Dopuszcza się modele alternatywne: cztery domeny lub pięć z osobnym MP-D. Hipotezy kierunkowe są propozycją, nie prerejestracją.
+1. Dokument kilkukrotnie deklaruje **44 główne pozycje**, ale numeruje **1–45**; tabela końcowa poprawnie sumuje 45, wraz z M1–M3/F1 daje **49**.
+2. Stwierdza **0 pozycji odwracanych**, jednak niektóre opisują odwrotne kierunki konstruktów (SEI 19/22, SAP 28/30, RAR 42–44), a niektóre są niejednoznaczne (EAR 6–9, RAR 38). Bez decyzji o operacjonalizacji **średnie nie są interpretowalne**.
+3. SEI 16 opisuje zgodność wielu kanałów, chociaż źródło nazywa go obowiązkowym dla wszystkich; wymaga odrębnej reguły obecności kanałów i oceny inwariancji.
+4. W opisie zmian wersji błędnie podano **12 odwróconych pozycji v1 i v2**: v1 wymieniała **10**, v2 miała **9**, v2.1 miała **11** oznaczeń odwrócenia.
+5. W tekście pojawiają się nieaktualne odniesienia do numerów wcześniejszych wersji (np. sekcja 3.1.2), a określenie „validated item content” jest **nieuprawnione** bez dokumentu walidacyjnego.
+6. Propozycje liczebności, progów wykluczeń, średnich, norm opisowych i terminów badań **nie są decyzjami zatwierdzonymi ani wynikami empirycznymi**.
+7. Zakres MP-D w czterech pozycjach dotyczy głównie przypisywanej sprawczości/intencjonalności; pełna definicja agency + experience wymaga weryfikacji treściowej.
 
-Pojęcie „recenzja” pochodzi z nazwy przekazanego dokumentu: nie stanowi poświadczenia formalnej recenzji redakcyjnej. Przywołania w nim mają często formę domen/skrótów bez kompletnych metadanych; bibliografię i aktualność standardów trzeba zweryfikować przed wykorzystaniem w publikacji.
+Dokument źródłowy zawiera bibliografię i mapę pozycji v2→v3, lecz ich poprawność (metadane cytowań, zgodność wordingów i wersji) wymaga niezależnego przeglądu przed wykorzystaniem w manuskrypcie.
 
-## Kolejne dokumenty
+## Reguła kolejnej aktualizacji
 
-Porównać nowy materiał z aktualnym stanem; aktualizować istniejące opisy, tworzyć nową wersję instrumentu **tylko przy rzeczywistej zmianie treści lub klucza**, zapisać nierozstrzygnięte sprzeczności i zaktualizować `CHANGELOG.md`. Nie utożsamiać propozycji z przyjętą decyzją badawczą.
+Nowy dokument aktualizuje istniejące syntetyczne opisy; pełny tekst pozycji i identyfikatory przechowuje jedno CSV na wersję. Niezgodności rejestrować, ale **nie poprawiać potajemnie** tekstu źródłowego. Wszelkie korekty kwestionariusza oznaczać kolejną wersją i dokumentować decyzję. Priorytetem pozostaje KISS.

@@ -1,35 +1,37 @@
-# Kwestionariusz DERA-HRI (wersje rozwojowe)
+# Kwestionariusz DERA-HRI
 
-**Aktualna propozycja:** [DERA-HRI v2.1](../instruments/dera_hri_v2_1.csv), 48 pozycji i cztery postulowane domeny po 12 pozycji. [DERA-HRI v2](../instruments/dera_hri_v2.csv) pozostaje nienaruszony jako materiał porównawczy. Treść w CSV jest wierną transkrypcją propozycji z recenzji; żadna wersja nie została zwalidowana.
+**Aktualny bank źródłowy:** [v3.0 EN](../instruments/dera_hri_v3.csv), **45 pozycji rdzenia + 4 modułów**, odpowiedzi 1–7. Archiwalne banki [v2.1](../instruments/dera_hri_v2_1.csv) i [v2](../instruments/dera_hri_v2.csv) pozostają bez zmian. Tekst angielski v3 nie jest zwalidowaną adaptacją wcześniejszej wersji polskiej.
 
-## Administracja
+## Administracja (propozycja v3)
 
-Bezpośrednio po **jednej konkretnej interakcji z robotem**, zgodnie z wersją protokołu. Proponowana instrukcja v2.1: „Proszę odpowiedzieć, w jakim stopniu poniższe stwierdzenia opisują Pana/Pani doświadczenie w trakcie tej konkretnej interakcji z robotem.”
+Uczestnik odnosi wszystkie odpowiedzi do **jednej zakończonej interakcji** (zalecane bezpośrednio, orientacyjnie 5–10 minut po sesji i przed debriefingiem). Siedmiopunktowa skala zgody, od 1 „Strongly disagree” do 7 „Strongly agree”, z etykietą każdej kategorii. Dane sesji: wersja formularza i język, robot, zadanie, tryb sterowania, czas, dostępne kanały ekspresji, opóźnienie do ankiety, brakujące/niezastosowane pytania.
 
-Odpowiedzi **1–7** (v2.1: 1 „Zdecydowanie nie”, 7 „Zdecydowanie tak”). Pełne etykiety kategorii w wersji v2 i krótsze kotwice v2.1 wymagają ujednolicenia i sprawdzenia w wywiadach poznawczych. Nie wprowadzać zmienionego formularza pod tym samym ID wersji.
+| Moduł | ID źródłowe v3 | Reguła źródłowa |
+| --- | --- | --- |
+| EAR-D | 1–11 | wszystkie |
+| SEI-D | 12–23 | 12–15 zależne od ruchu/głosu/gestów/mimiki |
+| SAP-D | 24–33 | wszystkie |
+| MP-D | 34–37 | wszystkie |
+| RAR-D | 38–45 | wszystkie |
+| RM | M1–M3 | strategie, raportowanie osobno |
+| FII | F1 | intencja przyszłej interakcji, osobno |
 
-## Klucz z dokumentu źródłowego, niezatwierdzony
+**SEI 16** w źródle umieszczono wśród pytań obowiązkowych, lecz pyta o zgodność **różnych kanałów**. Jeśli dostępny był jeden kanał, odpowiedź jest strukturalnie niemożliwa: oznaczenie `multichannel_review` w CSV sygnalizuje wymaganą decyzję. Nie imputować „4” za brak kanału.
 
-Recenzja proponuje odwrócenie (`8 – odpowiedź`) następujących pozycji:
+## Skoring: **NIEZATWIERDZONY**
 
-- EAR-D: **6, 12**;
-- SAP-D: **17, 23**;
-- SEI-D: **31, 32, 34, 36**;
-- RAR-D: **41, 42, 43**.
+W dokumencie v3 proponuje się średnie odpowiedzi z każdej podskali, zerowe odwracanie, tolerancję do 20% zwykłych braków, progi 1–2,33 / 2,34–4,66 / 4,67–7 oraz reguły wykluczeń (m.in. wypełnienie w czasie poniżej 3 minut). **To propozycje autora dokumentu, bez walidacji; nie implementować ich automatycznie.**
 
-Kolumna `reverse` w CSV zapisuje **propozycję recenzji**, nie poprawny i zatwierdzony skoring. **Nie implementować automatycznego obliczania wyników.**
+Istotne sprzeczności:
+- **EAR-D 6–9:** komfort, dyskomfort, podejście i unikanie mają różne znaki, nie wyznaczają jednorodnego „nasilenia reaktywności”.
+- **SEI-D 19 i 22:** niejasność i utrudnienie interpretacji mają przeciwny kierunek do czytelności; 20 (zmiana interpretacji) także nie jest jednoznacznie ujemna.
+- **SAP-D 28 i 30:** zaskoczenie/nieprzewidywalność nie rosną w tym samym kierunku co przewidywalność.
+- **RAR-D 38 oraz 42–44:** 38 nie określa walencji, 42–44 opisują destabilizację i stres, a 39–41/45 poprawę regulacji.
+- **SEI-D 12–16:** różna liczba kanałów zmienia zawartość pomiaru; średnie z różnych zestawów pozycji nie są z definicji porównywalne.
+- Nie istnieją normy ani klinicznie uzasadnione progi wyników; „wysoki RAR” nie ma ustalonej interpretacji.
 
-Szczególna niespójność: pozycja **6** („komfort cielesny”) jest oznaczona do odwrócenia, choć reaktywność nie oznacza automatycznie dyskomfortu. Ponadto pozycje EAR 6–9 reprezentują różne bieguny doświadczenia, a 11 mówi o przewidywalności, nie wielkości pobudzenia. Wymaga to rozdzielenia koncepcji konstruktów przed zatwierdzeniem średniej.
+Kolumna `source_reverse=false` **odtwarza deklarację v3**, a nie potwierdza, że wyliczenie prostych średnich jest prawidłowe. Ostateczne kierunki, selekcję pozycji, braki danych i reguły wyliczeń należy zatwierdzić po ocenie treściowej i analizie empirycznej.
 
-## Proponowane moduły analityczne
+## Wersjonowanie
 
-- SAP-D: pozycje 13–18 i 23–24 jako rdzeń predykcji; 19–22 potencjalnie osobny moduł atrybucji/mentalizacji, ale **nie usuwać ich z banku v2.1 bez nowej wersji**.
-- SEI-D: 26 tylko przy obecnym głosie, 27 przy gestach/zmianach postawy, 28 przy co najmniej dwóch kanałach. **Brak zastosowania ≠ zwykły brak odpowiedzi ani wartość 4.** Proponowana średnia z dostępnych pozycji wymaga walidacji porównywalności między konfiguracjami kanałów; należy raportować zestaw i liczbę odpowiedzi.
-- RAR-D: recenzja proponuje jako rdzeń efektu **38–43, 47** (41–43 odwrócone); 37 = ogólny wpływ, 44–46 = strategie, 48 = intencja ponownej interakcji. To hipoteza strukturalna, nie końcowy wynik podskali.
-- Nie ma zatwierdzonego **wyniku globalnego**, średniej dla żadnej podskali ani zasad traktowania braków danych.
-
-## Metadane poza skalą
-
-Wersja instrumentu, anonimowy identyfikator sesji, konfiguracja robota i tryb sterowania, użyte kanały (ruch, głos, gesty itd.), zadanie, czas interakcji i odległość czasowa do ankiety. Kontrole badawcze (do decyzji przed pilotażem): wcześniejsza ekspozycja na roboty, postawy (np. NARS), antropomorfizacja, ogólny komfort z technologią; dobór miar zewnętrznych wraz z licencją.
-
-**Do sprawdzenia:** nakładanie się 19–22 z mind perception, 31/33/35/36 z SAP, negatywnych pozycji 41–43 oraz podobieństwo semantyczne 19–20 i 31/36. Zmiany itemów wyłącznie w nowej wersji i z zapisanym uzasadnieniem.
+Numeracja **v3 jest nowa**; ID v2/v2.1 nie mogą być używane wymiennie. Źródło podaje mapowanie w dodatku B; mapę tę należy niezależnie zweryfikować przed analizą międzywersyjną. Dane powinny zawierać wersję, język oraz dokładny identyfikator pozycji. **Nie scalać odpowiedzi z różnie sformułowanych wersji bez oceny równoważności.**
