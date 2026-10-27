@@ -1,5 +1,14 @@
 # Zmiany
 
+## 2026-10-27 — Szkic artykułu v3 i weryfikacja źródeł
+
+- Skatalogowano `kwestionariusz-dera-hri_v3.docx` jako **manuskrypt koncepcyjno-metodologiczny**, a nie nową wersję kwestionariusza.
+- Odnotowano, że w manuskrypcie brak pełnych pytań mimo deklaracji Data Availability; 45 pozycji pozostaje w kanonicznym CSV.
+- Oddzielono docelowe progi CFA/rzetelności/CVR od wyników empirycznych i niezatwierdzonych reguł skoringu.
+- Zweryfikowano datę publikacji Vagnetti i in. [3]: **2024**, nie 2023; zapisano wymagane poprawki narracji o „18 rozwiązanych problemach”.
+- Bez zmian instrumentów, zależności i kodu.
+
+
 ## 2026-10-27 — Ponowna kontrola recenzji v2
 
 - Potwierdzono, że `Recenzja-DERA-HRI-2(1).odt` jest **bajtowo identyczna** z otrzymaną wcześniej `Recenzja-DERA-HRI-2.odt` (SHA-256 `023e0ec75013c8fee831e674c1afaba0976a127ab2c5c632d4b2bc1fb6f82e30`).

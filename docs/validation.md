@@ -26,6 +26,12 @@ Siedmioetapowy plan źródłowy przewiduje także wielokulturową walidację, an
 
 Z krytycznej analizy `Recenzja-DERA-HRI.md` (również w PDF) pozostają aktualne wymagania: mierzyć trafność względem PAD/SAM, kontrolować efekt halo, społeczną pożądaność, doświadczenie z robotami, cechy empatii, różnice środowiska/trybu autonomii oraz oddzielać subiektywne doznania od fizjologii. Ewentualna weryfikacja porządku EAR/SAP/SEI/RAR i opóźnień <200 / 100–500 / 500–2000 ms wymaga danych czasowych i protokołu, nie ankiety po jednej interakcji. Raport nie zawiera danych walidacyjnych. Przewidywany harmonogram 3–4 lata i wielkości prób są orientacyjne, **nie stanowią obowiązkowych bramek**; do pilotażu należy dopuścić wersję rozwojową z właściwym oznaczeniem i zgodami. [Status źródeł](sources.md#audyt-źródłowy-recenzji-v1).
 
+## Specyfikacja postulowana w manuskrypcie v3
+
+Szkic artykułu `kwestionariusz-dera-hri_v3.docx` podaje jako cele: α/ω ≥0,80; test–retest po dwóch tygodniach ≥0,70; CVR ≥0,75 (panel co najmniej 5 osób); CFA: CFI/TLI ≥0,95, RMSEA ≤0,06, SRMR ≤0,08; dodatkowo `ΔR² ≥10%` ponad modele wymiarowe. **Są to oczekiwania źródła, nie uzyskane parametry, normy ani automatyczne kryteria przyjęcia.** Zwłaszcza CVR zależy od liczby ekspertów i definicji oceny „niezbędności”; test–retest wymaga stabilnego kontekstu przy narzędziu mierzącym doświadczenie *stanu*.
+
+Artykuł koncepcyjny może prezentować model, bank i plan walidacji, ale nie wolno opisywać ich w abstrakcie jako uzyskanej trafności. Wyniki własnej walidacji wymagają odrębnych danych, analiz, protokołu i sekcji Results. Zewnętrzna podstawa dla luk w psychometrii HRI: Vagnetti i in., *J Med Internet Res* **2024;26:e55597**, [DOI](https://doi.org/10.2196/55597).
+
 ## Reguły interpretacji
 
 - **Hipotezy**: EAR↔pobudzenie, SEI↔czytelność sygnałów, SAP↔przewidywalność/kontrola, MP↔antropomorfizacja, RAR↔regulacja emocji; związek SEI–SAP–RAR oraz rola MP jako moderatora wymagają osobnych projektów do wnioskowania przyczynowego.

@@ -42,6 +42,10 @@ Porównanie v3 z wcześniej dostarczoną recenzją v2 pokazuje, że część sfo
 
 Wymagana jest **ponowna ocena treściowa tych sześciu pozycji**; zachować bank źródłowy v3 bez zmian do czasu decyzji i wersjonowanej rewizji. [Przegląd decyzji](https://github.com/MatPomGit/arc-dera-hri/issues/1).
 
+## Zgodność z manuskryptem v3
+
+Przesłany szkic artykułu `kwestionariusz-dera-hri_v3.docx` powtarza poprawną liczbę **45 pozycji głównych**, ale nie zawiera pełnego tekstu kwestionariusza, mimo deklaracji w części „Data Availability”. Jedynym aktualnym kompletnym bankiem jest [v3 CSV](../instruments/dera_hri_v3.csv). W szkicu zaproponowano ponadto próg „minimum 6” wypełnionych pozycji SEI-D; **nie rozwiązuje on** problemu strukturalnego braku kanału lub interpretacji SEI 16. Traktować go jako niezatwierdzoną regułę źródłową.
+
 ## Wersjonowanie
 
 Numeracja **v3 jest nowa**; ID v2/v2.1 nie mogą być używane wymiennie. Źródło podaje mapowanie w dodatku B; mapę tę należy niezależnie zweryfikować przed analizą międzywersyjną. Dane powinny zawierać wersję, język oraz dokładny identyfikator pozycji. **Nie scalać odpowiedzi z różnie sformułowanych wersji bez oceny równoważności.**
