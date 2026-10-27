@@ -1,5 +1,13 @@
 # Historia zmian
 
+## 2026-10-27 — Pakiet oceny treściowej i metodologii CVR/CVI
+
+- Przygotowano kompletny, pusty arkusz ekspercki dla 45 pozycji głównych + M1–M3/F1, zachowując dokładne brzmienie v3.
+- Dodano prostą, lokalną analizę CVR/CVI z obsługą braków i niezależnymi mianownikami oraz testami.
+- Rozdzielono oryginalne tablice Lawshego od dokładnego testu dwumianowego; dopisano ugruntowane źródła COSMIN.
+- Bez danych uczestników, ocen ekspertów ani jakichkolwiek zmian kwestionariusza.
+
+
 ## 2026-10-27 — Porządkowanie i MkDocs
 
 - Ujednolicono opisy pięciodomenowej wersji v3; usunięto powtórzenia, nieaktualne odwołania i nieistniejące wymagane pliki.

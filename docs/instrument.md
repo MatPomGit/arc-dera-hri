@@ -41,4 +41,4 @@ SEI 12–15 odpowiadają odpowiednio za ruch, głos, gesty i mimikę. Jeśli kan
 
 W v3 powróciły sformułowania krytykowane w recenzji v2.1: **EAR 11** łączy przewidywalność z kontrolą; **SEI 19/22** wprowadzają interpretowanie intencji i sztuczność; **SAP 26/32** sugerują przyczyny lub narzucają związek przyczynowy. Ponadto MP-D koncentruje się na przypisywanej sprawczości, nie pełnym rozumieniu *mind perception*.
 
-**Nie modyfikować pozycji w istniejącym pliku**: rewizja wymaga nowego banku i rejestru decyzji. Zobacz [trafność treściową](content-validity.md) i [otwarte Issue #1](https://github.com/MatPomGit/arc-dera-hri/issues/1).
+Do oceny przed pilotażem dostępny jest [formularz ekspercki zawierający całe 49 pozycji](https://github.com/MatPomGit/arc-dera-hri/blob/main/instruments/dera_hri_v3_expert_form.csv) (cztery modułowe są opcjonalne). **Nie modyfikować pozycji w istniejącym pliku**: rewizja wymaga nowego banku i rejestru decyzji. Zobacz [trafność treściową](content-validity.md) i [otwarte Issue #1](https://github.com/MatPomGit/arc-dera-hri/issues/1).

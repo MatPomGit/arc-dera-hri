@@ -25,4 +25,13 @@ Dokumenty autora opisują **propozycje projektowe**, nie przeprowadzone badania 
 - Źródłowe zasady średnich, profili „uncanny” i progów klinicznych są niezweryfikowane. Problemy bieżącego banku zebrano w [specyfikacji](instrument.md).
 - W manuskrypcie v3 poprawić bibliografię: **Vagnetti i in. 2024**, *J Med Internet Res* 26:e55597, [DOI 10.2196/55597](https://doi.org/10.2196/55597). Sam tytuł „Data Availability” nie oznacza, że pełne pytania rzeczywiście zawarto w manuskrypcie.
 
+## Literatura metodologiczna zweryfikowana w toku przygotowania panelu
+
+- **Ayre, C., i Scally, A. J. (2014).** Critical Values for Lawshe's Content Validity Ratio: Revisiting the Original Methods of Calculation. *Measurement and Evaluation in Counseling and Development, 47*(1), 79–86. [DOI](https://doi.org/10.1177/0748175613513808). Wariant dokładnego testu dwumianowego należy oznaczać osobno od oryginalnych tablic.
+- **Polit, D. F., Beck, C. T., i Owen, S. V. (2007).** Is the CVI an acceptable indicator of content validity? Appraisal and recommendations. *Research in Nursing & Health, 30*(4), 459–467. [DOI](https://doi.org/10.1002/nur.20199). Trafność i zgodność ekspertów wymagają rozróżnienia.
+- **Terwee, C. B., i in. (2018).** COSMIN methodology for evaluating the content validity of patient-reported outcome measures: a Delphi study. *Quality of Life Research, 27*, 1159–1170. [DOI](https://doi.org/10.1007/s11136-018-1829-0).
+- **Mokkink, L. B., i in. (2025).** Content validity: judging the relevance, comprehensiveness, and comprehensibility of an outcome measurement instrument – a COSMIN perspective. *Journal of Clinical Epidemiology, 185*, 111879. [DOI](https://doi.org/10.1016/j.jclinepi.2025.111879).
+
+Te publikacje wyznaczają metodologiczne **uzasadnienie planu**; nie stanowią dowodu uzyskanej trafności DERA-HRI.
+
 Dalsze źródła aktualizują istniejącą dokumentację. Zmiana brzmienia pytania wymaga **nowego banku wersjonowanego**, bez nadpisywania historycznych danych.
