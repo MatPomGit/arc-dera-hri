@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use the developmental DERA-HRI questionnaire, materials, or tools, please cite this repository. The instrument is not yet psychometrically validated."
+title: "ARC-DERA-HRI: Dynamic Embodied Relational Affect in Human–Robot Interaction"
+type: software
+authors:
+  - family-names: Pomianek
+    given-names: Mateusz
+    affiliation: Politechnika Rzeszowska
+repository-code: https://github.com/MatPomGit/arc-dera-hri
