@@ -4,7 +4,7 @@
 
 ## Rozpoznanie i rezerwacja
 
-Przed edycją przeczytaj [zasady główne](../../AGENTS.md), [cel](../../README.md), bieżące Issues, PR, stan `main`, testy i odpowiednie strony MkDocs. Sprawdź istniejące rozwiązania i pracę innych agentów. Wybierz jedno nierozpoczęte zadanie, preferując naprawy, aktualizację istniejącego PR i blokady naukowe przed nowymi funkcjami. Zarezerwuj Issue komentarzem lub istniejącym leasingiem Research Autopilot. Nie twórz kolejki, schedulera ani drugiego backlogu.
+Przed edycją przeczytaj `AGENTS.md` w katalogu głównym, `README.md` w katalogu głównym, bieżące Issues, PR, stan `main`, testy i odpowiednie strony MkDocs. Sprawdź istniejące rozwiązania i pracę innych agentów. Wybierz jedno nierozpoczęte zadanie, preferując naprawy, aktualizację istniejącego PR i blokady naukowe przed nowymi funkcjami. Zarezerwuj Issue komentarzem lub istniejącym leasingiem Research Autopilot. Nie twórz kolejki, schedulera ani drugiego backlogu.
 
 Przed użyciem skilla sprawdź jego opis, pochodzenie, wersję, wymagane uprawnienia i wykluczenia; uruchamiaj tylko potrzebne, zweryfikowane narzędzia. Skill nie upoważnia do obejścia polityk repozytorium. Maksymalnie jeden aktywny feature PR na repozytorium i pięć w zarządzanym portfolio, zgodnie z kontrolerem.
 
