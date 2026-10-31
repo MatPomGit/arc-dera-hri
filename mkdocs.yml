@@ -17,6 +17,7 @@ nav:
   - Wywiady poznawcze: cognitive-interviews.md
   - Plan walidacji: validation.md
   - Źródła i wersje: sources.md
+  - Zasady pracy agentów: development/agent-workflow.md
 plugins:
   - search
 markdown_extensions:
