@@ -23,3 +23,8 @@
 - Dla zmian wymagających przeglądu preferuj PR; po scaleniu **usuń gałąź**, zamknij lub uaktualnij Issue, nie zostawiaj martwych PR-ów.
 - Małe, atomowe aktualizacje samej dokumentacji mogą trafiać bezpośrednio na `main`, jeśli zapobiega to tworzeniu zbędnych gałęzi.
 - Podaj pliki, zakres, wynik rzeczywistych testów, status publikacji Pages i nierozstrzygnięte blokery. Nie ogłaszaj sukcesu publikacji bez potwierdzenia działania strony.
+
+## Cykl autonomiczny i kryteria ukończenia
+- Przy wyborze JUMP, rezerwacji pracy, użyciu skilli, testach exact-SHA, przeglądzie i sprzątaniu czytaj [procedurę agentów](docs/development/agent-workflow.md).
+- Obowiązujące zasady metodologiczne, brak zwalidowanego instrumentu, niezmienne identyfikatory pozycji i zakaz nieuprawnionych badań pozostają nadrzędne wobec ogólnych wzorców.
+- Przed integracją sprawdź aktualne Issues, wymagane CI/review i osobno publikację MkDocs. Nie traktuj `COMMENT` jako formalnego zatwierdzenia GitHub.
