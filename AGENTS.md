@@ -1,5 +1,10 @@
 # Zasady pracy: ARC-DERA-HRI
 
+## Submission-first editorial directive (2026-11-07)
+
+Follow [RESEARCH.md](RESEARCH.md#submission-first-publication-policy-author-directive-2026-11-07): prioritize author-approved submission of a scientifically defensible, completed manuscript over indefinite polishing driven by fear of rejection. An achievable publication even at 20 verified Polish evaluation points is preferable to an unpublished manuscript, but points and acceptance are not guaranteed. Prepare a journal shortlist, requirements, submission package and author decision; after rejection, propose revision and resubmission. Never bypass evidence, ethics, consent, novelty, safety or author-approval gates; do not submit, contact publishers or incur APC without explicit author approval.
+
+
 ## Przed zmianą
 - Przeczytaj `README.md`, odpowiednie strony `docs/`, `CHANGELOG.md`, otwarte Issues i PR-y.
 - **KISS:** jeden cel zmiany, minimalna liczba plików, brak frameworków, modułów i zależności „na zapas”.
