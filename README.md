@@ -8,10 +8,10 @@ Aktualny model proponuje **pięć domen i 45 pozycji głównych**: EAR-D (11), S
 
 ## Dokumentacja
 
-- [Strona projektu](docs/index.md) i [model](docs/model.md)
-- [Kwestionariusz i administracja](docs/instrument.md) · [**polski formularz Word (DOCX)**](instruments/dera_hri_v3_pl.docx) · [wersja do czytania w MkDocs](docs/questionnaire-pl.md)
-- [Protokół trafności treściowej](docs/content-validity.md), [kompletny arkusz ekspercki v3](instruments/dera_hri_v3_expert_form.csv), [ocena pokrycia pięciu domen](instruments/dera_hri_v3_domain_review.csv), [analiza CVR/CVI](tools/content_validity.py) i [wywiady poznawcze](docs/cognitive-interviews.md) i [plan walidacji](docs/validation.md)
-- [Źródła i wersje](docs/sources.md), [historia zmian](CHANGELOG.md)
+- [Strona projektu](pages/index.md) i [model](pages/model.md)
+- [Kwestionariusz i administracja](pages/instrument.md) · [**polski formularz Word (DOCX)**](instruments/dera_hri_v3_pl.docx) · [wersja do czytania w MkDocs](pages/questionnaire-pl.md)
+- [Protokół trafności treściowej](pages/content-validity.md), [kompletny arkusz ekspercki v3](instruments/dera_hri_v3_expert_form.csv), [ocena pokrycia pięciu domen](instruments/dera_hri_v3_domain_review.csv), [analiza CVR/CVI](tools/content_validity.py) i [wywiady poznawcze](pages/cognitive-interviews.md) i [plan walidacji](pages/validation.md)
+- [Źródła i wersje](pages/sources.md), [historia zmian](CHANGELOG.md)
 - Banki: [v3.0-PL (tłumaczenie robocze)](instruments/dera_hri_v3_pl.csv), [v3 (EN)](instruments/dera_hri_v3.csv), [v2.1 (PL)](instruments/dera_hri_v2_1.csv), [v2 (PL)](instruments/dera_hri_v2.csv)
 
 Dokumentacja MkDocs: **https://matpomgit.github.io/arc-dera-hri/** (poprzednia publikacja GitHub Actions zakończona sukcesem).
