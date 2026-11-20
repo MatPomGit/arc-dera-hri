@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source_dir": "pages",
+  "output_dir": "site",
+  "public_files": [
+    "index.md",
+    "model.md",
+    "instrument.md",
+    "questionnaire-pl.md",
+    "content-validity.md",
+    "cognitive-interviews.md",
+    "validation.md",
+    "sources.md"
+  ],
+  "requires_explicit_publication": true,
+  "notes": "Reviewed scientific pages only; never include development/agent-workflow or internal docs. Publish only after separate owner approval."
+}

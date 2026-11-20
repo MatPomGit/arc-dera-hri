@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "count_method": "unicode_codepoints",
+  "exact_limits": {
+    "AGENTS.md": 12000,
+    "README.md": 12000,
+    "RESEARCH.md": 12000,
+    "ARCHITECTURE.md": 12000,
+    "SECURITY.md": 10000,
+    "CODE_OF_CONDUCT.md": 6000,
+    "GOVERNANCE.md": 7000,
+    "SUPPORT.md": 6000,
+    "docs/development/agent-workflow.md": 8000,
+    "docs/pages.md": 8000,
+    "docs/adr/README.md": 5000,
+    "pages/questionnaire-pl.md": 10000,
+    "pages/content-validity.md": 8500,
+    "pages/cognitive-interviews.md": 8500,
+    "docs/adr/0001-pages-boundary.md": 6500,
+    "docs/security/threat-model.md": 8500,
+    "docs/security/incident-response.md": 7500
+  },
+  "glob_limits": {
+    "pages/**/*.md": 6000,
+    "docs/**/*.md": 10000,
+    "docs/adr/[0-9][0-9][0-9][0-9]-*.md": 6500
+  }
+}

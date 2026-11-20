@@ -8,20 +8,20 @@ Follow [RESEARCH.md](RESEARCH.md#submission-first-publication-policy-author-dire
 ## Przed zmianą
 - Przeczytaj `README.md`, odpowiednie strony `docs/`, `CHANGELOG.md`, otwarte Issues i PR-y.
 - **KISS:** jeden cel zmiany, minimalna liczba plików, brak frameworków, modułów i zależności „na zapas”.
-- Dokumentacja projektu jest w MkDocs (`mkdocs.yml`, `docs/`). **Nie wymagaj nieistniejących `docs/architecture.md` ani `docs/adr/`**.
+- Publiczna witryna jest w `pages/`, dokumentacja wewnętrzna w `docs/`. Architektura, bezpieczeństwo i ADR mają osobne kontrakty; nie publikuj tych źródeł automatycznie.
 
 ## Rygor naukowy
 - Rozdzielaj: treść źródła → hipotezę → zatwierdzoną decyzję → badanie → wynik.
 - Nie nazywaj skali zwalidowaną, nie zakładaj liczby czynników ani skoringu przed empirycznym uzasadnieniem.
 - Kanoniczne banki `instruments/*.csv` mają **niezmienne ID i brzmienia**. Każda korekta pytania to nowa wersja; nie przepisuj historii.
 - Nie myl samoopisu z pomiarem fizjologicznym ani korelacji z przyczynowością. Rozdzielaj brak kanału od braku odpowiedzi.
-- Nowy dokument źródłowy: zaktualizuj istniejącą właściwą stronę i `docs/sources.md`; nowy plik tylko dla odrębnego celu.
+- Nowy dokument źródłowy: zaktualizuj istniejącą właściwą stronę i `pages/sources.md`; nowy plik tylko dla odrębnego celu.
 
 ## Kod, testy i dokumentacja
 - Python standard library, PEP 8, proste funkcje i tylko wymagane zależności. Bez zbędnej abstrakcji i pustych atrap.
 - Utrzymuj podstawowe testy integralności instrumentu; nie maskuj usterek usuwaniem testów.
 - Po zmianach dokumentacji zweryfikuj linki i uruchom `python -m mkdocs build --strict`, o ile MkDocs jest dostępny; w innym razie jasno odnotuj brak testu i sprawdź workflow.
-- `README.md` = zwięzły punkt wejścia; `docs/` = opis aktualnego stanu; `CHANGELOG.md` = historia; `instruments/` = pełne brzmienia pozycji. Nie dubluj tych treści.
+- `README.md` = zwięzły punkt wejścia; `pages/` = zatwierdzone materiały publiczne; `docs/` = dokumentacja wewnętrzna; `CHANGELOG.md` = historia; `instruments/` = pełne brzmienia pozycji. Nie dubluj tych treści.
 - Żadnych płatnych usług, własnego API, danych osobowych ani nagrań w publicznym repozytorium.
 
 ## Zamykanie pracy
@@ -33,3 +33,9 @@ Follow [RESEARCH.md](RESEARCH.md#submission-first-publication-policy-author-dire
 - Przy wyborze JUMP, rezerwacji pracy, użyciu skilli, testach exact-SHA, przeglądzie i sprzątaniu czytaj [procedurę agentów](docs/development/agent-workflow.md).
 - Obowiązujące zasady metodologiczne, brak zwalidowanego instrumentu, niezmienne identyfikatory pozycji i zakaz nieuprawnionych badań pozostają nadrzędne wobec ogólnych wzorców.
 - Przed integracją sprawdź aktualne Issues, wymagane CI/review i osobno publikację MkDocs. Nie traktuj `COMMENT` jako formalnego zatwierdzenia GitHub.
+
+## Ochrona publikacji i przeglądy
+
+`pages/` jest jedynym źródłem GitHub Pages. Każdy plik wymaga wpisu w `config/pages-policy.json` i walidacji `python scripts/validate_pages.py`. Nie publikuj instrukcji dla agentów, promptów, notatek redakcyjnych i porad współtworzenia repozytorium. Dla prywatnych repozytoriów osobno zweryfikuj widoczność strony. Nie publikuj automatycznie po merge; publikację zatwierdza właściciel.
+
+**DoR:** cel, SHA, zakres, ryzyko R0–R3, wpływ na kwestionariusz, podstawy merytoryczne i kryteria testów. **DoD:** rzeczywiste wyniki testów na HEAD SHA, aktualne źródła, niezależny review i uprawniony merge. R0 oznacza redakcję, R1 drobną poprawkę bez zmiany instrumentu, R2 zmianę kodu, kontraktu lub polityki, R3 publikację, badanie z udziałem ludzi lub dane wrażliwe. Sam CI nie poświadcza walidacji psychometrycznej ani zgody etycznej.
