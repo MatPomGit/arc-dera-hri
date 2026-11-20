@@ -13,10 +13,12 @@
     "docs/development/agent-workflow.md": 8000,
     "docs/pages.md": 8000,
     "docs/adr/README.md": 5000,
-    "docs/adr/0001-publication-boundary.md": 6500,
     "pages/questionnaire-pl.md": 10000,
     "pages/content-validity.md": 8500,
-    "pages/cognitive-interviews.md": 8500
+    "pages/cognitive-interviews.md": 8500,
+    "docs/adr/0001-pages-boundary.md": 6500,
+    "docs/security/threat-model.md": 8500,
+    "docs/security/incident-response.md": 7500
   },
   "glob_limits": {
     "pages/**/*.md": 6000,
